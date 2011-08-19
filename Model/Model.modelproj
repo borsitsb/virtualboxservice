@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9bf9a90f-890e-4c43-bfdc-b95432df7b6d}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>Model</Name>
+    <RootNamespace>Model</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="ModelDefinition\Package1_1125.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1256.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1553.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1125.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1256.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1418.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1503.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1541.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1553.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1558.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1810.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1857.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2049.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2058.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2328.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VBoxWrapper\VBoxWrapperBuilding.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VBoxWrapper\VBoxWrapperBuilding.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VBoxWrapper\VBoxWrapperBuilding.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="VBoxWrapper\VBoxWrapperMachineBuilding.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VBoxWrapper\VBoxWrapperMachineBuilding.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VBoxWrapper\VBoxWrapperMachineBuilding.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="VBoxWrapper\VBoxWrapper.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VBoxWrapper\VBoxWrapper.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VBoxWrapper\VBoxWrapper.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="VirtualBoxService\VirtualBoxService.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VirtualBoxService\VirtualBoxService.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VirtualBoxService\VirtualBoxService.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="VirtualBoxService\WrapperExtensions\MachineBuilding.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VirtualBoxService\WrapperExtensions\MachineBuilding.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VirtualBoxService\WrapperExtensions\MachineBuilding.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="VirtualBoxService\WrapperExtensions\Shutdown.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VirtualBoxService\WrapperExtensions\Shutdown.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VirtualBoxService\WrapperExtensions\Shutdown.sequencediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="Components.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Components.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Components.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Model.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="VirtualBoxService" />
+    <Folder Include="VBoxWrapper" />
+    <Folder Include="VirtualBoxService\WrapperExtensions" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="40f9bc56-204d-45a1-90c9-dc9ee01c3a14"
+  name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="ff4e9876-f183-45a7-b886-c263c2fe2fa9">
+      <body>The Windows Service Control Manager</body>
+      <annotatedElements>
+        <componentMoniker
+          Id="23bcdc1c-2e0f-45a6-b82d-31204a3384d4"
+          LastKnownName="SCM"
+          LastKnownLocation="Model.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <referencesInternal>
+    <reference
+      Id="45d3a0d2-1903-4a58-b34c-bf7cfd6f66e7"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=::"
+      tag="ViewCode" />
+  </referencesInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="90b1b089-eced-4bdd-a351-babfe4250d8c"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="85048613-8837-4c5d-a80f-b258dbcfa52c">
+          <propertyInstance
+            Id="4e121abf-c4ef-469e-806f-796c27e51345"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="f5987c56-5dd7-492b-9034-8e14fe7635be">
+          <propertyInstance
+            Id="e2a4bb9d-8239-4ef2-aebd-61e1df2d3005"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="bd18b0d4-0cbf-4b22-8095-5f48746d127f">
+          <propertyInstance
+            Id="79176e6a-7225-4685-a0cb-b7d31d3cc8d3"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="f5fe6658-2526-463d-ae54-fb9237cdfd9f"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="3d62ff33-ea28-4eb2-92dd-6489db41a9e6">
+          <propertyInstance
+            Id="c56b4b6c-051f-47ca-ba64-df7aeb05cee0"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="009e5693-ac52-40eb-8640-59424227ac6b">
+          <propertyInstance
+            Id="a35d7b6c-8e0a-4fac-bcc6-bb815ce1e5db"
+            name="TemplateFilePath"
+            value="ClassTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\ClassTemplate.t4|EnumTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\EnumTemplate.t4|InterfaceTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\InterfaceTemplate.t4|StructTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="f38fbc1f-f267-40d9-aa46-cfe3e9be3527">
+          <propertyInstance
+            Id="32a9c5cd-35b1-4618-92e1-29b5bd02f413"
+            name="ProjectPath"
+            value="ClassTemplate=..\ModelLib\ModelLib.csproj|EnumTemplate=..\ModelLib\ModelLib.csproj|InterfaceTemplate=..\ModelLib\ModelLib.csproj|StructTemplate=..\ModelLib\ModelLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="91fa8d3c-b410-4049-8d1f-9a6a063b987e">
+          <propertyInstance
+            Id="272b34fc-6cf4-440c-8a00-925989c1f78f"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="303e398f-8f39-4913-b3f2-bf4de6888220">
+          <propertyInstance
+            Id="09903601-dff8-4814-b42f-76486b110f6d"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="4b019ebb-bd66-4198-9005-a722b4cc78c9">
+          <propertyInstance
+            Id="b6d5a00e-61a9-474d-b707-9cad0d664461"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="101afbcd-faee-47a1-b095-f0f5bc0f4bc0">
+          <propertyInstance
+            Id="de0f3fe7-623f-4a53-92ce-1e2467afcfeb"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="28cfcb65-dfb9-4e07-a440-79245a3b9e21">
+      <profileInstance
+        Id="f9439fa9-3b75-4688-b855-e0bf0ff79a08"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="ed3f1e10-3dab-4c50-9c35-37e92c27d720">
+      <profileInstance
+        Id="2f3e35a6-b74b-4fcd-8d09-8263874a8242"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <component
+        Id="782f5be1-9d81-443f-9a60-1258a1e2548c"
+        name="VirtualBoxService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="10403607-31b6-4ceb-ae1d-4b3cf1a82d32">
+            <componentMoniker
+              Id="e19f5dfc-8c88-4be8-b4fb-71b51bf0fb1e"
+              LastKnownName="Nini"
+              LastKnownLocation="Model.uml" />
+          </dependency>
+          <dependency
+            Id="7fa0a680-6797-450a-8470-548586603b4f">
+            <componentMoniker
+              Id="7d3f36ff-c1f1-462e-9fee-72756b8e0aad"
+              LastKnownName="VBoxWrapper"
+              LastKnownLocation="Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="1636b2d5-efb0-4b33-b240-0f96392b76b0"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="80551c0e-642a-4035-9f62-214b391e8ca7"
+                LastKnownName="ServiceControlable"
+                LastKnownLocation="Model.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e19f5dfc-8c88-4be8-b4fb-71b51bf0fb1e"
+        name="Nini"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c5947551-dd39-46cb-a037-a502e90b4707"
+        name="ServiceController"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="80551c0e-642a-4035-9f62-214b391e8ca7"
+        name="ServiceControlable"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="fa2ef2f4-23da-46fc-a83e-8f15a449308c"
+        LastKnownName="VirtualBoxService"
+        LastKnownLocation="Package_1857.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f05240e4-61a1-4d18-aa48-463cedaa0942"
+        LastKnownName="Microsoft"
+        LastKnownLocation="Package_1256.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5dbe29b2-5857-4d16-a855-26a490d64bcd"
+        LastKnownName="Slf"
+        LastKnownLocation="Package_2328.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="85df6bb0-1bf8-455c-a1e8-10038e5fc986"
+        LastKnownName="VBoxWrapper"
+        LastKnownLocation="Package_1418.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2be8cd0a-77b7-4b40-a6a4-c107065e7133"
+        LastKnownName="VirtualBox"
+        LastKnownLocation="Package_1553.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="891d013e-bac6-4c5d-a44d-12479447109c"
+        LastKnownName="System"
+        LastKnownLocation="Package1_1553.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="acbf2416-66f3-41f4-973f-63bd86d17ca5"
+        name="Object"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="fd924b83-c981-42cf-86c4-b17c5990f2ef"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6c891b81-77e6-4b68-b7d8-e24c2aa219df"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="63cf7989-a002-4b14-bb12-551e76f92c9d">
+                <propertyInstance
+                  Id="1994bf05-287c-45a6-8a09-de7e2550a22a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="63b2b0ee-f480-45d9-8928-895a3d7a93c2">
+                <propertyInstance
+                  Id="18b53299-8981-4a9d-aa40-ca072e13bee9"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="845f66c8-cfb9-4f43-bf37-0d46e8a229fb">
+                <propertyInstance
+                  Id="f7838ef5-01b6-46bf-b688-7f20035253fe"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="49240235-6e2f-4552-a7a2-687ce252e234">
+                <propertyInstance
+                  Id="2e0280a2-e73f-422e-97f7-948aa459a662"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="54df89a8-63a0-4ec0-a7c9-dc65b97f3449">
+                <propertyInstance
+                  Id="9907a394-85ba-45b1-8a82-c0e289ded0a5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1cb61107-47cc-42ed-a95b-b4864a67826d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ac9f6ca2-1b81-4c57-9b29-57b441a7c93f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="844a216a-166e-424f-865b-8a72fc62a5e2">
+        <operation>
+          <operationMoniker
+            Id="2e793ad1-881a-4e0f-aa60-3c5209dfeb54"
+            LastKnownName="buildMachineList"
+            LastKnownLocation="Package_1418.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1881b2fb-2998-43c8-8ffc-cdfc05c0eb59"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="65f0092f-1e8e-4436-aef2-a02d12ba9c50"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="40dd5362-12c7-4e31-a3f3-cb894e4bc3a2"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="243d0fc5-5e9f-4582-82d4-0c879161a8df"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="48dd8b73-689f-4bd0-8d7e-7e73685d8760">
+        <operation>
+          <operationMoniker
+            Id="2c74652f-7d07-4568-a7cb-e879c97e417d"
+            LastKnownName="buildMachineProxyList"
+            LastKnownLocation="Package_1558.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="293ddaba-db40-4716-9a93-a72898b6cf9b">
+        <operation>
+          <operationMoniker
+            Id="2c74652f-7d07-4568-a7cb-e879c97e417d"
+            LastKnownName="buildMachineProxyList"
+            LastKnownLocation="Package_1558.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b5700a4a-7478-4aa8-97f3-293e876f2230"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6dcca859-92d8-47c0-9516-49d7ad14d9a8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="eb2754e0-3609-432a-a8fe-0fda39fbc068"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="077ca791-6cfa-4026-ac54-d2906414f9d0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c5acea09-4b64-4b96-9f63-3cc9bdffbfd0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b67276ae-3aa0-4ac4-bfa9-ac5e4f0a381d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3d0a3028-a13d-44f2-ba7b-2dc61ecb0c62"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="31de9fce-9688-4820-aef0-8a61c5f9f1f4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="9ad67e18-869a-4570-a9c8-fc0e3dfac447">
+        <operation>
+          <operationMoniker
+            Id="30e45b56-0c75-4f57-86ed-e210192b72a7"
+            LastKnownName="createShutdownMethod"
+            LastKnownLocation="Package_1418.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="4ec94bc4-d441-4efa-8adb-8c61e8f1ac83">
+        <operation>
+          <operationMoniker
+            Id="30e45b56-0c75-4f57-86ed-e210192b72a7"
+            LastKnownName="createShutdownMethod"
+            LastKnownLocation="Package_1418.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="19471af0-4a94-487c-85a3-501fc2259178"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="28596c5e-d6ec-476d-8f31-e728a9d78d51"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="662a47b8-34fe-486c-baff-4801c771d355"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b274fe95-584d-4ae5-9920-78d4bb327720"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b8c1389a-fe48-4482-b629-663d40625118"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f90f8130-f425-462c-8658-7c2cd450fee5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="91504768-6b56-4c0e-b729-e94da5cdbc48"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1ddcb9af-0956-4251-b884-e9386c372371"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d006097b-f277-4e5a-ad3b-7fc719f8aa7b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="51b4382e-d95e-489b-b39e-6650a5b1df82"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="79268e79-604e-48ff-8de8-564541e39435">
+        <operation>
+          <operationMoniker
+            Id="2e793ad1-881a-4e0f-aa60-3c5209dfeb54"
+            LastKnownName="buildMachineList"
+            LastKnownLocation="Package_1418.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="63b01a34-b7bc-4f1c-821d-117631a83423">
+        <operation>
+          <operationMoniker
+            Id="2c74652f-7d07-4568-a7cb-e879c97e417d"
+            LastKnownName="buildMachineProxyList"
+            LastKnownLocation="Package_1558.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="d0595338-02b7-4428-927b-47f80108bcb8">
+        <operation>
+          <operationMoniker
+            Id="2c74652f-7d07-4568-a7cb-e879c97e417d"
+            LastKnownName="buildMachineProxyList"
+            LastKnownLocation="Package_1558.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0e67cad9-c698-4213-9a22-ca9c24abb09b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e384072b-5526-4df9-b579-8b7ee341e05d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="512d074e-7576-4a81-896a-afdf0bba3d05">
+        <operation>
+          <operationMoniker
+            Id="6a4ab312-c09e-44f9-8806-928a7b576c67"
+            LastKnownName="Shutdown"
+            LastKnownLocation="Package_1418.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5acd497a-ef9d-48ca-8d6a-48caf4b3e9ab"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="571131f4-cae6-4700-85c9-dd50dc452c6c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="f02dc536-2f6c-480e-804d-c253611926a1">
+        <operation>
+          <operationMoniker
+            Id="ba5eeaf0-d0fb-4fea-9f54-f5927666e124"
+            LastKnownName="getShutdownMethod"
+            LastKnownLocation="Package_1503.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="28c9eece-7947-47be-878e-b750a47f43b2">
+        <operation>
+          <operationMoniker
+            Id="ba5eeaf0-d0fb-4fea-9f54-f5927666e124"
+            LastKnownName="getShutdownMethod"
+            LastKnownLocation="Package_1503.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d53ad74a-2707-49c8-ac71-4170c6b0cd92"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ab836cf1-a984-4086-9184-aeb7cf8bd31d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8ac0af6a-8f57-456b-a4dc-18bdce72a29a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="84a3ca75-2751-4176-9f81-806719575238"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="eb05895f-c0ec-4b41-8445-3dc6b744724f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0dc7e6f5-0843-42f4-be77-f3d8ff3114d5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0179f861-23be-4dc8-bbb2-541a4df201ea"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="19d4ccda-a439-4130-8aa5-a0a99cd04e2e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="6945fb32-5b9f-4029-addd-f1308b224487">
+        <operation>
+          <operationMoniker
+            Id="6de10071-9009-4e40-aafb-c9c1b0a1c6e8"
+            LastKnownName="ShutdownAsync"
+            LastKnownLocation="Package_1418.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="820ea2a0-a71f-43ca-978b-0a306c853288">
+        <operation>
+          <operationMoniker
+            Id="6de10071-9009-4e40-aafb-c9c1b0a1c6e8"
+            LastKnownName="ShutdownAsync"
+            LastKnownLocation="Package_1418.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d369e733-b19e-437c-a861-ede9abc7885e"
+        name="VirtualBoxComApi"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d9299910-4cbc-447a-913a-c0cc589286da"
+        name="InstallGui"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="5ee0e3b3-3260-4c37-ba3e-39bddf4b120e">
+            <componentMoniker
+              Id="e19f5dfc-8c88-4be8-b4fb-71b51bf0fb1e"
+              LastKnownName="Nini"
+              LastKnownLocation="Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="7d3f36ff-c1f1-462e-9fee-72756b8e0aad"
+        name="VBoxWrapper"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="a0b0c8af-a07c-436f-9c84-2e7557434efa">
+            <componentMoniker
+              Id="d369e733-b19e-437c-a861-ede9abc7885e"
+              LastKnownName="VirtualBoxComApi"
+              LastKnownLocation="Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="23bcdc1c-2e0f-45a6-b82d-31204a3384d4"
+        name="SCM"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>Windows Service Control Manager</description>
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="ab819f17-f902-49cb-8e57-9e2cc2c4e05b"
+            name="SCM-Controlport"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="28e34f3d-ceb7-4f02-8324-9f3df13ad582">
+                <providedInterfaceMoniker
+                  Id="1636b2d5-efb0-4b33-b240-0f96392b76b0"
+                  LastKnownName="Port1"
+                  LastKnownLocation="Model.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="c5947551-dd39-46cb-a037-a502e90b4707"
+                LastKnownName="ServiceController"
+                LastKnownLocation="Model.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7817bfd0-3b24-4826-9c5e-a3d7983566d9"
+        name="MachineProxyListBuilder(" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d9115211-c1b1-47a5-af57-4e307b99158e"
+        name="Machine" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

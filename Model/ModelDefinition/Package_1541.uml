@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="cb038ef5-2414-4c91-9e17-4c13421ed120"
+  name="Diagnostics"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="35616b31-bdc1-4930-b2ab-cf3a0ef39269"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=System.Diagnostics"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="e1bbf06c-661f-423a-85e3-d31c0a02973a"
+        name="TraceSource"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="517cfe9d-f525-4fb5-bab4-595458430f26"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/System.dll&quot; Namespace=System.Diagnostics Type=TraceSource"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2926f9e3-1cda-4dd2-884f-530f7c0107ac"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1f4bdb61-3849-43f5-8296-4446b66e77b4">
+                <propertyInstance
+                  Id="38428507-234a-4925-b9e8-17ac8a4fa10a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f717c93c-4c2b-45e9-8cf5-8cfad82df09b">
+                <propertyInstance
+                  Id="b03c85c3-b16c-457a-b099-64559602e962"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0cd04d17-8507-4aa1-a7af-e203ec848233">
+                <propertyInstance
+                  Id="2095e3c1-01c5-4769-ae82-3ca66c2c5f25"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="09503fc9-c742-4eba-9263-65ee474e98d7">
+                <propertyInstance
+                  Id="5aeb6683-bf28-4158-b2cd-8c2b6278f803"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="344394af-b603-4377-9dda-6684b6465a4f">
+                <propertyInstance
+                  Id="efb22b38-c5a9-49c8-85f1-bda3413a75b5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="37ec9849-2ad0-4f21-84b9-9fa72b2cc1aa"
+        name="Stopwatch"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1853c5bc-5dbe-4063-a3df-00160c937b99"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/System.dll&quot; Namespace=System.Diagnostics Type=Stopwatch"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bc234583-c17c-4147-a29c-9d2ee3897e08"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b4b5e97a-9fc5-48a0-abdb-e80bb76e3f31">
+                <propertyInstance
+                  Id="b7dbd6b1-0416-46db-889b-a92ceb65928d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a0e2adf8-1140-4cb6-9861-e48101228a5a">
+                <propertyInstance
+                  Id="4e976d5e-0c04-416e-81e3-58cfe614689d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ed106bfe-697f-46e8-ab59-98a6c57340c7">
+                <propertyInstance
+                  Id="12969a3c-87bd-4035-a670-f84d0bd39429"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a0b5e92a-129d-48f6-958c-63e3eb14e04b">
+                <propertyInstance
+                  Id="93ecb91f-6e74-42a8-aa8d-edfa90c751c6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e63a8751-7ed0-4267-8e07-e6e671a8da99">
+                <propertyInstance
+                  Id="27fc1a76-d008-4482-80c4-abe29a2c223b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5dbe29b2-5857-4d16-a855-26a490d64bcd"
+  name="Slf"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="23ca7780-45c0-4677-a4be-652cf764b816"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Slf"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="83fc2406-2e6e-4f1f-a52c-d85efee7c136"
+        name="ILogger"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="2241fccc-d366-4074-a520-fb6f10087223"
+            handle="viewcode://./CodeSchema_Interface?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/SLF/bin/Debug/SLF.dll&quot; Namespace=Slf Type=ILogger"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9e30c90c-c097-4d18-aad4-285f8ee545d1"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="183758cf-ccdb-4a1e-8496-efe4d2b4aa95">
+                <propertyInstance
+                  Id="56338c9e-7a63-41c2-a899-ee4dea7c1114"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06abe91b-f548-43c3-ba85-ff8314dbc854">
+                <propertyInstance
+                  Id="821ab4ba-3c40-4360-bfcc-1103fc48b431"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8d77ff85-ba0d-496c-9dde-1d63be52581d">
+                <propertyInstance
+                  Id="864f79a2-c001-494f-95bc-8e5fc5b5807d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7d7d70c9-84f4-4972-8435-7e147f7d8e84">
+                <propertyInstance
+                  Id="e3c4127d-d44a-4df7-baf5-5927d11b2e53"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

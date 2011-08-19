@@ -1,0 +1,10 @@
+<!VirtualboxService--[Config]--/VirtualboxService>
+[Config] := {"Autostart":[AutoStart], "ShutdownType": [ShutdownTypes], "ACPIShutdownTimeout": [Time]}
+[ShutdownTypes] := SaveState | ACPIShutdown | HardOff
+[AutoStart] := "true" | "false"
+[Time] := Zeit
+
+
+Example:
+
+<!VirtualboxService--{"Autostart":"true", "ShutdownType":"ACPIShutdown", "ACPIShutdownTimeout": "300000"}--/VirtualboxService>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="b5321f96-1758-46bd-84f0-4864d2f90858" name="Components" linkedPackageId="9624371c-bd7c-4535-8561-45df67650435" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="486df7cd-c331-46d4-8ae6-b6ae50ac1992">
+      <elementDefinition Id="ff4e9876-f183-45a7-b886-c263c2fe2fa9" />
+      <body>The Windows Service Control Manager</body>
+      <annotatedElements>
+        <componentMoniker Id="aada6dca-f44a-4eed-bab4-4c638afc9955" LastKnownName="SCM" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="b4b19f6d-ef97-4b46-999b-c959b9e854ce" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="90b1b089-eced-4bdd-a351-babfe4250d8c" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5816a012-f3eb-4af3-819e-94bb327da0be">
+          <propertyInstance Id="9e846462-45ea-4de7-b129-97800d2abd5e" name="BaseName">
+            <elementDefinition Id="4e121abf-c4ef-469e-806f-796c27e51345" />
+          </propertyInstance>
+          <elementDefinition Id="85048613-8837-4c5d-a80f-b258dbcfa52c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e10e1be6-7247-4deb-96d4-76c07498cb5a">
+          <propertyInstance Id="fbf5f2f9-6bec-440d-9341-a2e2103ee4eb" name="ClrAttributes">
+            <elementDefinition Id="e2a4bb9d-8239-4ef2-aebd-61e1df2d3005" />
+          </propertyInstance>
+          <elementDefinition Id="f5987c56-5dd7-492b-9034-8e14fe7635be" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ab779fb9-7403-4d96-af07-7cbdc9e06156">
+          <propertyInstance Id="f5c4b14b-63eb-441d-8ced-20f47fad736a" name="Usings">
+            <elementDefinition Id="79176e6a-7225-4685-a0cb-b7d31d3cc8d3" />
+          </propertyInstance>
+          <elementDefinition Id="bd18b0d4-0cbf-4b22-8095-5f48746d127f" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="1b45c725-e9ff-4241-8e56-f6f9199d71c0" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="f5fe6658-2526-463d-ae54-fb9237cdfd9f" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="924dd90c-f20e-4a9e-a634-e8f9a0334272">
+          <propertyInstance Id="2203ee08-20dc-444b-bed0-f5389de59290" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="c56b4b6c-051f-47ca-ba64-df7aeb05cee0" />
+          </propertyInstance>
+          <elementDefinition Id="3d62ff33-ea28-4eb2-92dd-6489db41a9e6" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="05126138-8628-4043-a702-ac1032d776ad">
+          <propertyInstance Id="41c23c7e-a80b-430c-b9f2-96ed7a3e12fe" name="TemplateFilePath" value="ClassTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\ClassTemplate.t4|EnumTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\EnumTemplate.t4|InterfaceTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\InterfaceTemplate.t4|StructTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="a35d7b6c-8e0a-4fac-bcc6-bb815ce1e5db" />
+          </propertyInstance>
+          <elementDefinition Id="009e5693-ac52-40eb-8640-59424227ac6b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="26473a0b-5763-4a2b-b362-13f027458062">
+          <propertyInstance Id="2d306bf8-8359-4a92-9e52-4cb0f861c9df" name="ProjectPath" value="ClassTemplate=..\ModelLib\ModelLib.csproj|EnumTemplate=..\ModelLib\ModelLib.csproj|InterfaceTemplate=..\ModelLib\ModelLib.csproj|StructTemplate=..\ModelLib\ModelLib.csproj">
+            <elementDefinition Id="32a9c5cd-35b1-4618-92e1-29b5bd02f413" />
+          </propertyInstance>
+          <elementDefinition Id="f38fbc1f-f267-40d9-aa46-cfe3e9be3527" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4b1794ac-d4a0-4cf3-9453-fa7fb9bbf380">
+          <propertyInstance Id="0250b737-d82b-418f-92bd-a850270986d4" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="272b34fc-6cf4-440c-8a00-925989c1f78f" />
+          </propertyInstance>
+          <elementDefinition Id="91fa8d3c-b410-4049-8d1f-9a6a063b987e" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c8cb1d07-690a-4e72-bad3-8afc28599e68">
+          <propertyInstance Id="2ab5c7dd-f45d-4b18-a0af-f862b1ed7324" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="09903601-dff8-4814-b42f-76486b110f6d" />
+          </propertyInstance>
+          <elementDefinition Id="303e398f-8f39-4913-b3f2-bf4de6888220" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="eecbca4c-e039-497d-9b07-808b6fdda23c">
+          <propertyInstance Id="ef70d35b-d633-4e97-a9fd-9c2c62ea0110" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="b6d5a00e-61a9-474d-b707-9cad0d664461" />
+          </propertyInstance>
+          <elementDefinition Id="4b019ebb-bd66-4198-9005-a722b4cc78c9" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="02f49e92-e9c0-41a5-952d-06db193e7595">
+          <propertyInstance Id="9f0761eb-b80a-4866-822c-7175277bbc22" name="Parameters">
+            <elementDefinition Id="de0f3fe7-623f-4a53-92ce-1e2467afcfeb" />
+          </propertyInstance>
+          <elementDefinition Id="101afbcd-faee-47a1-b095-f0f5bc0f4bc0" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="163e8f54-c466-423c-a64c-80c5423323ed">
+      <profileInstance Id="9efd85a6-e071-47f6-9862-989e34be04d2" name="CSharpProfile">
+        <elementDefinition Id="f9439fa9-3b75-4688-b855-e0bf0ff79a08" />
+      </profileInstance>
+      <elementDefinition Id="28cfcb65-dfb9-4e07-a440-79245a3b9e21" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4f88da7b-d750-4446-a237-7087228e79ea">
+      <profileInstance Id="50f04c60-e9d5-4057-9715-2263a317b98a" name="TextTemplateBindings">
+        <elementDefinition Id="2f3e35a6-b74b-4fcd-8d09-8263874a8242" />
+      </profileInstance>
+      <elementDefinition Id="ed3f1e10-3dab-4c50-9c35-37e92c27d720" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="8afbfef9-562e-42bd-8fdb-a0c57b8d8eee" name="VirtualBoxService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="782f5be1-9d81-443f-9a60-1258a1e2548c" />
+        <suppliersInternal>
+          <dependency Id="10cfe775-2423-4555-bc24-879974f4dda2">
+            <componentMoniker Id="77735d00-b88d-4dbd-95ad-7b8a948cbb75" LastKnownName="Nini" />
+            <elementDefinition Id="10403607-31b6-4ceb-ae1d-4b3cf1a82d32" />
+          </dependency>
+          <dependency Id="eac585e6-c4e8-4956-a5d2-8eb960c542bc">
+            <componentMoniker Id="95ef3be5-0a6a-43f7-9328-92e54bec4eb7" LastKnownName="VBoxWrapper" />
+            <elementDefinition Id="7fa0a680-6797-450a-8470-548586603b4f" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface Id="67f91a83-bc13-4c3a-bf22-0ffa040036e2" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="1636b2d5-efb0-4b33-b240-0f96392b76b0" />
+            <type_NamedElement>
+              <interfaceMoniker Id="0b0b3d6a-7af4-4c26-9a53-0faad0a503f6" LastKnownName="ServiceControlable" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="46c9bcb6-d8b9-4054-96cd-b123812511c3" name="InstallGui" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d9299910-4cbc-447a-913a-c0cc589286da" />
+        <suppliersInternal>
+          <dependency Id="13da242d-395d-4736-90a8-2f6930ac5c3c">
+            <componentMoniker Id="77735d00-b88d-4dbd-95ad-7b8a948cbb75" LastKnownName="Nini" />
+            <elementDefinition Id="5ee0e3b3-3260-4c37-ba3e-39bddf4b120e" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="77735d00-b88d-4dbd-95ad-7b8a948cbb75" name="Nini" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e19f5dfc-8c88-4be8-b4fb-71b51bf0fb1e" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="aada6dca-f44a-4eed-bab4-4c638afc9955" name="SCM" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>Windows Service Control Manager</description>
+        <elementDefinition Id="23bcdc1c-2e0f-45a6-b82d-31204a3384d4" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="8a277c9f-2d88-4c9d-a914-20ff30e6153a" name="SCM-Controlport" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ab819f17-f902-49cb-8e57-9e2cc2c4e05b" />
+            <suppliersInternal>
+              <dependency Id="f62385df-80a1-4fb3-8ab5-fe439444a2b8">
+                <providedInterfaceMoniker Id="67f91a83-bc13-4c3a-bf22-0ffa040036e2" LastKnownName="Port1" />
+                <elementDefinition Id="28e34f3d-ceb7-4f02-8324-9f3df13ad582" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="69a7657a-1cde-41e0-9063-5d97a710e881" LastKnownName="ServiceController" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="69a7657a-1cde-41e0-9063-5d97a710e881" name="ServiceController" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5947551-dd39-46cb-a037-a502e90b4707" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="0b0b3d6a-7af4-4c26-9a53-0faad0a503f6" name="ServiceControlable" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="80551c0e-642a-4035-9f62-214b391e8ca7" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="95ef3be5-0a6a-43f7-9328-92e54bec4eb7" name="VBoxWrapper" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7d3f36ff-c1f1-462e-9fee-72756b8e0aad" />
+        <suppliersInternal>
+          <dependency Id="957a12d4-1329-4269-935b-ea10dbb8e8d9">
+            <componentMoniker Id="32c46675-5e3c-4197-9a35-bc806d7b4c2f" LastKnownName="VirtualBoxComApi" />
+            <elementDefinition Id="a0b0c8af-a07c-436f-9c84-2e7557434efa" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="32c46675-5e3c-4197-9a35-bc806d7b4c2f" name="VirtualBoxComApi" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d369e733-b19e-437c-a861-ede9abc7885e" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="9624371c-bd7c-4535-8561-45df67650435" name="Model">
+    <elementDefinition Id="40f9bc56-204d-45a1-90c9-dc9ee01c3a14" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d879cda0-60df-4dda-b15c-84dac575cd15">
+        <profileInstance Id="4b21d0a7-7d9f-43ab-b8d3-7e5d612b5f92" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="09b1bb81-fd56-4122-b42d-aa1235808488">
+        <profileInstance Id="02da45e0-395e-4180-8ada-b752a81a6524" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

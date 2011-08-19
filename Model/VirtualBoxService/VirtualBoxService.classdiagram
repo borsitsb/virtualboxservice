@@ -1,0 +1,1583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="4ffbf59d-e439-4793-92e0-bf81f9e784d0" name="VirtualBoxService" linkedPackageId="4424cbc3-632f-4b99-b52e-a84f885fa3b9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="64297c31-481d-477f-b660-9528ecfe23d3" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="90b1b089-eced-4bdd-a351-babfe4250d8c" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c18fd378-de49-4e59-9915-22b86d213bc3">
+          <propertyInstance Id="32e7d208-8ae2-4edf-a696-38a24df04e0a" name="BaseName">
+            <elementDefinition Id="4e121abf-c4ef-469e-806f-796c27e51345" />
+          </propertyInstance>
+          <elementDefinition Id="85048613-8837-4c5d-a80f-b258dbcfa52c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6310c8b6-80df-4608-994c-32d3559c1a73">
+          <propertyInstance Id="3e90c4e4-9105-4da6-a448-977334bd022b" name="ClrAttributes">
+            <elementDefinition Id="e2a4bb9d-8239-4ef2-aebd-61e1df2d3005" />
+          </propertyInstance>
+          <elementDefinition Id="f5987c56-5dd7-492b-9034-8e14fe7635be" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="dc1c5dde-88b8-4b36-a091-f1cf2fd78b95">
+          <propertyInstance Id="12549ebf-87c5-42ff-ab19-1270e7d3fecf" name="Usings">
+            <elementDefinition Id="79176e6a-7225-4685-a0cb-b7d31d3cc8d3" />
+          </propertyInstance>
+          <elementDefinition Id="bd18b0d4-0cbf-4b22-8095-5f48746d127f" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="19429888-a123-4477-8ad3-3adacdeda4eb" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="f5fe6658-2526-463d-ae54-fb9237cdfd9f" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="624af3a8-de84-4a55-a51e-596197d03bb5">
+          <propertyInstance Id="310adebb-74d8-4c18-ac29-58db3e4fdfbc" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="c56b4b6c-051f-47ca-ba64-df7aeb05cee0" />
+          </propertyInstance>
+          <elementDefinition Id="3d62ff33-ea28-4eb2-92dd-6489db41a9e6" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8942c8b3-d234-4f7d-9127-13731184c3ed">
+          <propertyInstance Id="2f328e24-0912-4ea0-8940-9ad33078b8b7" name="TemplateFilePath" value="ClassTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\ClassTemplate.t4|EnumTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\EnumTemplate.t4|InterfaceTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\InterfaceTemplate.t4|StructTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="a35d7b6c-8e0a-4fac-bcc6-bb815ce1e5db" />
+          </propertyInstance>
+          <elementDefinition Id="009e5693-ac52-40eb-8640-59424227ac6b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3402e8fa-f15e-4b9e-8c36-e1dc9cca7b1b">
+          <propertyInstance Id="296a0b89-4f30-4814-9a47-532e2c3604ec" name="ProjectPath" value="ClassTemplate=..\ModelLib\ModelLib.csproj|EnumTemplate=..\ModelLib\ModelLib.csproj|InterfaceTemplate=..\ModelLib\ModelLib.csproj|StructTemplate=..\ModelLib\ModelLib.csproj">
+            <elementDefinition Id="32a9c5cd-35b1-4618-92e1-29b5bd02f413" />
+          </propertyInstance>
+          <elementDefinition Id="f38fbc1f-f267-40d9-aa46-cfe3e9be3527" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="364bd07b-59d8-4666-8b88-9e7801735a9c">
+          <propertyInstance Id="e72f73e9-d0f4-4dd9-9a69-c01b9d32ad19" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="272b34fc-6cf4-440c-8a00-925989c1f78f" />
+          </propertyInstance>
+          <elementDefinition Id="91fa8d3c-b410-4049-8d1f-9a6a063b987e" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="951232aa-e9a1-4bde-a685-a16d18bb7152">
+          <propertyInstance Id="416c59e0-9854-4e24-bf02-7aba72e788a8" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="09903601-dff8-4814-b42f-76486b110f6d" />
+          </propertyInstance>
+          <elementDefinition Id="303e398f-8f39-4913-b3f2-bf4de6888220" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b9f8c84c-4181-4024-a977-3b9a48bdadc3">
+          <propertyInstance Id="7a63632c-0d43-4430-b314-1c4e43d2d95e" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="b6d5a00e-61a9-474d-b707-9cad0d664461" />
+          </propertyInstance>
+          <elementDefinition Id="4b019ebb-bd66-4198-9005-a722b4cc78c9" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="210c20fb-bbd2-458e-ae1e-13017b7634ae">
+          <propertyInstance Id="1ea9c948-8e9b-4fc1-b58b-a3a5dd821ead" name="Parameters">
+            <elementDefinition Id="de0f3fe7-623f-4a53-92ce-1e2467afcfeb" />
+          </propertyInstance>
+          <elementDefinition Id="101afbcd-faee-47a1-b095-f0f5bc0f4bc0" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="63341f23-65e1-44ae-b380-3233ad5af167" name="MachineController" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="9ad49646-0d97-4663-be42-0e25e5f72e2b" handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=MachineController" tag="ViewCode">
+            <elementDefinition Id="3bc16ae1-5665-4179-9f51-23888449a19c" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="ee1b29f0-6afb-4b2b-a141-7df8902d6705" name="class" profile="CSharpProfile">
+            <elementDefinition Id="0aec84e0-7744-48f4-a2c9-9ba367b0a8d2" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="fcfadf18-f158-4c3f-8abd-1f353ff3c431">
+                <propertyInstance Id="ad13c6e5-16e6-4563-836f-5a2e0cd28a31" name="ClrAttributes">
+                  <elementDefinition Id="6fb4f2cf-348f-4ca0-a58c-6cecd7a1bf41" />
+                </propertyInstance>
+                <elementDefinition Id="7a463e24-80d6-4671-99a4-aa9038592c68" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="6473e4f1-0390-491b-a194-707030ac76c6">
+                <propertyInstance Id="c479028a-71e3-4542-86c3-c5204f4b9336" name="IsPartial" value="false">
+                  <elementDefinition Id="15cdc7bd-9aea-41fa-bd52-a172c0d93e87" />
+                </propertyInstance>
+                <elementDefinition Id="c0e3c2ff-d29c-456b-b87d-c250808b46a8" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="23bb1505-32b3-486d-853a-b9fa60fbe4da">
+                <propertyInstance Id="f9f114d8-a96b-479b-b4b1-f8f7ef892894" name="IsStatic" value="False">
+                  <elementDefinition Id="351d7952-48a8-41ef-8415-6b36513d105d" />
+                </propertyInstance>
+                <elementDefinition Id="048383e1-bdcd-42c5-a80f-693a20ce8672" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="d054d499-b7c9-4190-ba39-6fdc2225ca81">
+                <propertyInstance Id="2f1ce0b2-a162-4822-bee5-8e801eaa88d6" name="IsUnsafe" value="false">
+                  <elementDefinition Id="93cbddb7-53af-435f-a788-c736fda427c6" />
+                </propertyInstance>
+                <elementDefinition Id="b47a9cbb-8be7-45a4-8c4b-b85cee0bd9fa" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e6bef4af-3a40-44f9-957b-b11bc3209a3d">
+                <propertyInstance Id="21f034bc-f1aa-4652-8c9c-9810a861613c" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="5435ff80-76a6-4737-901b-3534168d3d72" />
+                </propertyInstance>
+                <elementDefinition Id="bc8f64de-8a56-49ca-aa11-e38306781a6d" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="2699ec63-ce10-4e1d-a7d6-9aaee59bab53" />
+        <ownedOperationsInternal>
+          <operation Id="b4743302-58ca-4641-a687-b5d3ca277bd2" name="Start" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="75e7f678-a16d-46b0-a3fe-0c92a6041f3c" name="method" profile="CSharpProfile">
+                <elementDefinition Id="5d923649-783d-4db0-bd79-c5e92b2ddaae" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="52c000fd-f189-4bba-ae01-0ac8f3e2acd0">
+                    <propertyInstance Id="fa0b9ea9-ba81-408b-a2aa-5413f25859b1" name="ClrAttributes">
+                      <elementDefinition Id="d381ac31-3f7e-4987-8257-18efd71d8885" />
+                    </propertyInstance>
+                    <elementDefinition Id="b0084dea-4d2c-4fbc-afcb-0fb539b5446e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="32878733-ed81-4f6e-af13-15097af45b04">
+                    <propertyInstance Id="b06059b5-5a62-46b7-b73d-14cb41553014" name="IsPartial" value="false">
+                      <elementDefinition Id="0d988e61-d4d5-451e-aebc-f25f8bc63b51" />
+                    </propertyInstance>
+                    <elementDefinition Id="1dcfb436-3c37-4ed4-9d37-aa04ec4ddd50" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="302f5648-28d8-4f8c-b4ec-3244fda89cff">
+                    <propertyInstance Id="40e131ac-ce7b-487d-8e2d-73873f47f777" name="IsUnsafe" value="false">
+                      <elementDefinition Id="09d85247-85d7-44ef-afbc-0243d0d648a5" />
+                    </propertyInstance>
+                    <elementDefinition Id="1282ddec-d74c-4376-a3fd-3a2f5edc238d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d0d481e3-b31b-450d-94cd-78850498a8f7">
+                    <propertyInstance Id="cf5bf190-e563-4a21-b676-0484d5fd741f" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="208c6b67-a4b6-4fa7-938b-d69174c25fbd" />
+                    </propertyInstance>
+                    <elementDefinition Id="cc9700b1-128a-4116-be21-075d0e59285a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2091f56f-d255-44dc-abbd-6605daf24cfa">
+                    <propertyInstance Id="e5b9c490-51a6-4a00-a5bc-7974fa48657c" name="params" value="false">
+                      <elementDefinition Id="c605fc19-5637-45bd-91bd-a80e047a6482" />
+                    </propertyInstance>
+                    <elementDefinition Id="7f0ecc22-a9b1-4b74-a223-4e11a511ec30" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ed645f9c-389f-472e-9387-97ccfc9fc9bc" />
+          </operation>
+          <operation Id="db735fe5-2f77-41b8-b946-1db04170d187" name="Shutdown" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="fe0ceea7-61c5-4966-818e-1ae5c02b9ffa" name="method" profile="CSharpProfile">
+                <elementDefinition Id="35c2452e-343e-4478-9d00-606683d0e347" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4b5c4d8e-0527-4f6b-8153-348a5dd83458">
+                    <propertyInstance Id="e811fe0a-bdc8-4d5a-a63a-3fb4492c7f4a" name="ClrAttributes">
+                      <elementDefinition Id="3c81b93e-b016-4853-9973-e9a953cbc4fb" />
+                    </propertyInstance>
+                    <elementDefinition Id="6bc8c3e8-cd72-4a55-aa21-6aae0c5a229e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ede18bc6-9e56-42ef-b8af-cbe8da04b604">
+                    <propertyInstance Id="65164c60-d42f-445e-845b-11db8b5cb85d" name="IsPartial" value="false">
+                      <elementDefinition Id="4ff4897c-3c59-4a3c-827c-f43850fd6558" />
+                    </propertyInstance>
+                    <elementDefinition Id="d211172b-2daa-45f3-b8ac-e17e45d2f444" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d7652476-af23-47bb-8c15-b61dbc382b3b">
+                    <propertyInstance Id="2b862bb9-c432-4025-85bb-3986ae613c84" name="IsUnsafe" value="false">
+                      <elementDefinition Id="280de9ba-5764-47b7-bf10-051823c90e77" />
+                    </propertyInstance>
+                    <elementDefinition Id="61d99051-24ff-4906-8f52-4a4613acd0eb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bca8dfde-3e70-4a9b-979f-aa0af4b7424c">
+                    <propertyInstance Id="608b5667-a9b1-4fcd-8ec4-8af41d53317a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="d6677277-5741-4fe2-b429-45d55fc43214" />
+                    </propertyInstance>
+                    <elementDefinition Id="b783932d-c5c6-4876-b1d3-1e88113a59d6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4c63c1fd-446b-4079-a06f-5d7155e95bd7">
+                    <propertyInstance Id="6eb7a7fe-2174-48fa-af6b-8d89ebb283f2" name="params" value="false">
+                      <elementDefinition Id="07c962ec-6a69-4231-8131-101d6155ccb7" />
+                    </propertyInstance>
+                    <elementDefinition Id="091b7b6b-f7e9-4301-8458-8e4fe663cbbc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="445195d7-2e7f-4a0b-b9b3-0942b39cb5ea" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="01a91f45-0032-472b-9060-e06d3e5e62e4" name="Service" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="a5ef4818-a404-4437-b9b0-138d4ea57d92" name="class" profile="CSharpProfile">
+            <elementDefinition Id="7ec2529c-0b2c-42c3-8240-71ade4cb7743" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3cdcabbc-2965-459b-b9e8-2de079d7703d">
+                <propertyInstance Id="371e00ec-75a1-4309-ae44-a18b6d8e891f" name="ClrAttributes">
+                  <elementDefinition Id="332fa237-2f36-4dd0-84ba-54ad3c519b9d" />
+                </propertyInstance>
+                <elementDefinition Id="410c3307-e873-41c0-a592-71d9760523c5" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a2bb57ba-0232-49fb-b305-f129fa0f0614">
+                <propertyInstance Id="cfa0359c-2d10-4274-949f-e38162e15029" name="IsPartial" value="false">
+                  <elementDefinition Id="c85cf00b-f70f-4431-abea-6263e2a433ef" />
+                </propertyInstance>
+                <elementDefinition Id="75ad8739-e1a1-4d70-b350-3b79e40643aa" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="bc2550e9-3371-4cdd-91c4-5e2224c4fc8b">
+                <propertyInstance Id="ac75efe2-897f-430b-9c5e-bd66009065b1" name="IsStatic" value="false">
+                  <elementDefinition Id="e32aa96a-d76c-43a7-ab76-7e2a4cce99b8" />
+                </propertyInstance>
+                <elementDefinition Id="fc02cc3d-c257-4a0e-a5e2-8fde24b58c73" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="37317441-6d86-4bd3-8031-00870c04926e">
+                <propertyInstance Id="83020c39-e495-4221-9f16-8091212e4098" name="IsUnsafe" value="false">
+                  <elementDefinition Id="b6e70e3f-acd9-4d7d-a549-c195f91b9942" />
+                </propertyInstance>
+                <elementDefinition Id="cbbbb53a-a056-42f2-bc72-49a614ac1362" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1d5c8ef1-3d53-4429-abf8-113158dc5ded">
+                <propertyInstance Id="d827e2b5-551d-4386-91c5-235f6df8754b" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="29d49ceb-d0a2-4b8e-829a-37098e4c3b0e" />
+                </propertyInstance>
+                <elementDefinition Id="0ee4cc51-16f6-417d-b755-72a5ac11eaaa" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="3a817993-1c14-41e3-8ada-49815b3a5348" />
+        <targetEnds>
+          <association Id="1c965341-adac-42f1-b7ba-8acf782fdd16" isDerived="false" sourceEndRoleName="Service" targetEndRoleName="MachineController" isLeaf="false" isAbstract="false">
+            <classMoniker Id="63341f23-65e1-44ae-b380-3233ad5af167" LastKnownName="MachineController" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fe7955e-8482-4ea8-95a6-89473c9444a4" name="Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="51805877-abd1-4465-ab4f-1b178000db31" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="225ebedb-6726-45da-a91f-c315a722eb30" name="MachineController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="34ac07f0-d077-46d2-9a6b-2c292a969c0d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc069abb-e6c0-4fcd-9941-e963e0ef908a" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="8203cfe3-96a4-4cfc-a8ca-a6d5b67661da" name="OnStart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="085c853c-a6e4-445e-b688-5b21252875db" name="method" profile="CSharpProfile">
+                <elementDefinition Id="09514628-287f-4f19-b233-316100888ab1" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ee19bb9b-1d0f-466f-9f9d-ad40f2557511">
+                    <propertyInstance Id="ae8f7552-bd63-4b07-84a0-5ead74f02980" name="ClrAttributes">
+                      <elementDefinition Id="194d9161-c781-4ca3-ae1f-4a72f9473678" />
+                    </propertyInstance>
+                    <elementDefinition Id="ff93dc01-9d91-4599-bcd7-8db5edeacf24" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b27b53be-45d9-4a7d-8e1f-7a6d162ded6b">
+                    <propertyInstance Id="f24ecf45-068e-4128-a09a-bb8841ea305f" name="IsPartial" value="false">
+                      <elementDefinition Id="5b8fbe25-1881-47e0-961e-3f3030f514c7" />
+                    </propertyInstance>
+                    <elementDefinition Id="a7519a86-9486-4f25-8658-8c2a713abe11" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bedad640-6e0e-4fba-a247-075b95f42c22">
+                    <propertyInstance Id="912b564f-3786-4379-aa31-ca9ddc2848de" name="IsUnsafe" value="false">
+                      <elementDefinition Id="785607ff-7e8a-4f21-8d27-9c66d6ae89fd" />
+                    </propertyInstance>
+                    <elementDefinition Id="b990259d-a613-4b6c-8c25-fad0ff64aa9a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1755dcbc-eabf-4320-a92b-0b538aee2af3">
+                    <propertyInstance Id="862b1d00-3708-4140-affc-985034b14ff3" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="836303d1-3b4c-414b-8bd0-18bdfb52f5f1" />
+                    </propertyInstance>
+                    <elementDefinition Id="2398b94b-448a-4be9-9223-9d829cba5d8d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e6d073e2-cb48-4a90-a525-86c75c5ca9e4">
+                    <propertyInstance Id="a90365fc-eb85-4612-9f36-145bb44c4b7e" name="params" value="false">
+                      <elementDefinition Id="4370579d-5da3-45b2-a0fd-5e56722ac567" />
+                    </propertyInstance>
+                    <elementDefinition Id="8482ec06-e9be-47da-8f29-b558a3d3cfc8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="31ec8037-1bc4-4744-a5fd-61a8f5f318f6" />
+          </operation>
+          <operation Id="7ddd0fe2-09c0-430f-a82c-022c5baf5666" name="OnStop" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="ce9a9181-ede2-4720-bec6-f046de9c87f5" name="method" profile="CSharpProfile">
+                <elementDefinition Id="8cef2a34-6237-4256-b32b-ecc1082c60d3" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1bf4f718-2c5d-416d-be68-01dc7e7ab0bb">
+                    <propertyInstance Id="7ed7aff3-7988-471a-be84-467e022978c9" name="ClrAttributes">
+                      <elementDefinition Id="66778504-2885-48ad-a86e-f7e3da5f2784" />
+                    </propertyInstance>
+                    <elementDefinition Id="e84c0cd1-01d2-4d5b-b74a-9635ea47362d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="04fed53c-53e5-4b4c-9994-c8c141c44fb3">
+                    <propertyInstance Id="14af213e-9772-4a11-8f99-a4948ec6d2e3" name="IsPartial" value="false">
+                      <elementDefinition Id="f0d5d539-f6b5-4c68-ab16-6ad682e11fcb" />
+                    </propertyInstance>
+                    <elementDefinition Id="f9d58da9-04cf-4294-bd10-369696a775c7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="07a3cd11-d04d-4184-a550-6fc27a0c72a6">
+                    <propertyInstance Id="bab41427-85d9-4dfb-bd0f-43e929affe72" name="IsUnsafe" value="false">
+                      <elementDefinition Id="449a4691-d324-46bf-9bad-9ad79bb09f92" />
+                    </propertyInstance>
+                    <elementDefinition Id="99cb2471-3026-4c58-a032-cae3964d6e17" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2d5c8854-207a-4203-91e2-6a9a96795b53">
+                    <propertyInstance Id="50bad58a-f07f-4e7e-846c-7fea7a92c2e2" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="cdc235be-46d8-4272-bc69-a4e5c6e40cd2" />
+                    </propertyInstance>
+                    <elementDefinition Id="b952a5eb-64dd-4a0c-a1cf-a189b33bdda7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="83008a09-faa1-46cc-8818-a49b41636e02">
+                    <propertyInstance Id="789e6e1c-cd33-45e9-8c68-cfa63f33a179" name="params" value="false">
+                      <elementDefinition Id="8bf5fb04-a0fb-4448-84c5-fb5e4e197d94" />
+                    </propertyInstance>
+                    <elementDefinition Id="21ad51d7-9cda-439d-8091-bb00db484186" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="17d9aac9-ae9f-4216-abb6-86fa1dd43b6c" />
+          </operation>
+          <operation Id="81c10482-77c9-4f76-b108-630d365d85c0" name="OnCustomCommand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="d42ff402-44ed-4bb2-8ed3-52fbc96fdf96" name="method" profile="CSharpProfile">
+                <elementDefinition Id="3c457840-e9a7-4000-b9f2-9d1e77aaef75" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8ad5ec0c-c16a-4efd-9908-246519b888a9">
+                    <propertyInstance Id="02c045e7-06ba-45dd-9057-c71dbc2b24e9" name="ClrAttributes">
+                      <elementDefinition Id="1ec70484-2ced-4c04-b103-ad62a9af1e66" />
+                    </propertyInstance>
+                    <elementDefinition Id="829968e0-ac3d-40f8-82ff-7e08e2128332" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9b5d529d-5aac-4c97-9a4b-59deb359ced8">
+                    <propertyInstance Id="91413206-2c0a-49e2-a977-551eed33bf0c" name="IsPartial" value="false">
+                      <elementDefinition Id="fd549659-a8b2-4b5f-ae1b-f5c59dd733fd" />
+                    </propertyInstance>
+                    <elementDefinition Id="b400a3d8-921d-4f5c-95cd-4f171b31a404" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="65ad2daa-8c20-43f5-9d46-0f90f95adda5">
+                    <propertyInstance Id="6a0a3fdf-60ed-4655-ae26-fd26a2642920" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d4a206c5-c1ec-4caa-b85e-30c373c8416a" />
+                    </propertyInstance>
+                    <elementDefinition Id="df336780-e714-4d7a-bfbc-9a57816f6214" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a93f9c84-cb76-4cc3-b249-8bdf5992ad5f">
+                    <propertyInstance Id="494aa9f2-7ff3-4a75-80db-6ff0ea842342" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="e176e012-418a-438e-bf4d-6f871156d80a" />
+                    </propertyInstance>
+                    <elementDefinition Id="93d4ae47-f55d-4523-ab68-b2c3b225f820" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="87dbb9d1-2614-4b53-a6ef-0ec53a06e15c">
+                    <propertyInstance Id="97eb2a97-f70a-45a9-80eb-fd61ffea9c60" name="params" value="false">
+                      <elementDefinition Id="f43843f9-0dae-42e3-abe6-7080a1cda646" />
+                    </propertyInstance>
+                    <elementDefinition Id="4f11b354-abc5-4056-9379-010a40f490e4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="3e047213-375a-4163-a1af-bccd45a86ea9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="730ee617-388d-479f-bfc9-c564d747e46c" name="VBox" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="f4b62bf2-3bce-4a6c-bd5d-60687431aa6b" handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=VBox" tag="ViewCode">
+            <elementDefinition Id="3edb6e90-4336-4349-9177-210bf9519bce" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="2ab9eb56-5923-4409-bf82-a03e4818b1e7" name="class" profile="CSharpProfile">
+            <elementDefinition Id="726b99b0-d7e1-4c25-9859-2b7b58667a93" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="41eb2cd5-6d3b-4ad5-987b-feff8ddff2fb">
+                <propertyInstance Id="375b4f7e-df67-43a0-9f22-a413bfc260dd" name="ClrAttributes">
+                  <elementDefinition Id="2b6c04e7-8ad8-4cbf-85e0-8cba70a22964" />
+                </propertyInstance>
+                <elementDefinition Id="28283a64-9e5a-4dab-88dc-73d7cdb8b01c" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1424a358-92c7-404a-a6dd-acc8c963ea06">
+                <propertyInstance Id="c79e78a4-3571-4187-87b9-14a633ed02eb" name="IsPartial" value="false">
+                  <elementDefinition Id="d3920a44-b5d9-49f9-8879-3308e7c642e2" />
+                </propertyInstance>
+                <elementDefinition Id="7b22bf4b-3abe-400d-bfc8-b1451cc7fba1" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="4ef3e842-c24a-418d-a6ea-e30a0e6b1c0f">
+                <propertyInstance Id="add0497e-f898-4e1b-ad65-e4002cf1532b" name="IsStatic" value="False">
+                  <elementDefinition Id="d9e1a60b-0026-434d-98d9-c153b3cafbb7" />
+                </propertyInstance>
+                <elementDefinition Id="190ca8e7-3e6a-4a15-afe0-6e11f43729c3" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3c7372ff-a530-4f31-bcdf-36525f16c8c9">
+                <propertyInstance Id="2b65d401-64b2-412b-8934-ca54b5aa0b9e" name="IsUnsafe" value="false">
+                  <elementDefinition Id="ba26bda3-9bbd-464a-950e-62f658d6893c" />
+                </propertyInstance>
+                <elementDefinition Id="b4cf0859-b45f-45e5-94ff-ef5e29c6472f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3378a602-7e70-4109-a63a-c6fd16ef3ef8">
+                <propertyInstance Id="ec520fdd-ebde-4434-8e61-038e695a0926" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="eb00db95-97b4-4097-9438-d55ea47378d2" />
+                </propertyInstance>
+                <elementDefinition Id="8021b0c6-a689-4518-91c2-c36b586b5e37" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="20e70be3-eb55-4551-af0f-9585d31226b7" />
+        <ownedOperationsInternal>
+          <operation Id="af8e2ea8-7e9d-479f-9877-b69341657f39" name="RefreshMachines" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="3cb90553-5531-4dbb-ad18-b7a6c22dedba" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=VBox Member=RefreshMachines" tag="ViewCode">
+                <elementDefinition Id="ed008ee4-992a-4afb-93c0-53c7a82be2c0" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b2084840-4768-4288-bb9c-a0c77f61235d" name="method" profile="CSharpProfile">
+                <elementDefinition Id="84a3293d-909a-4d6c-8998-dd6ca66010ec" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="af747b19-d75e-47dc-810f-191ca92d63ed">
+                    <propertyInstance Id="c7e2b233-c7ce-4c36-8bd8-731a4e31ea88" name="ClrAttributes">
+                      <elementDefinition Id="c0523e8a-d4c8-4394-9d45-a9354180943a" />
+                    </propertyInstance>
+                    <elementDefinition Id="4390dc37-a220-4019-8956-49aba86c13ea" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6b169e3d-c610-43b1-88c6-3426d5c7cb47">
+                    <propertyInstance Id="1e16c251-b552-498d-a377-daffb7fef611" name="IsPartial" value="false">
+                      <elementDefinition Id="2419f75c-25e3-418a-82e9-350faf54e6a0" />
+                    </propertyInstance>
+                    <elementDefinition Id="c29b7a94-4bd7-49cb-8e68-9f11d4fad14a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="803f0fbe-80a3-4c76-9ba9-34d7fb6b6a5e">
+                    <propertyInstance Id="7ae7fc11-3ac5-4a5b-ace7-07d7683eb0e8" name="IsUnsafe" value="false">
+                      <elementDefinition Id="90301551-0c03-4361-b0d4-45b8d6c6632a" />
+                    </propertyInstance>
+                    <elementDefinition Id="58bdbc2f-17a3-4e34-a54f-be4be87b74b1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7d09bd30-39bc-4213-93ba-aa88bc02f9f3">
+                    <propertyInstance Id="07250a9e-b40b-4d93-97da-7f23603f6df2" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="3f91dbe3-8207-4a28-9912-8e191ca8386e" />
+                    </propertyInstance>
+                    <elementDefinition Id="d99dced3-f8dc-4eaa-a079-b51519069019" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eb5abbe1-aa75-40d9-84ef-aca06b9ad7c9">
+                    <propertyInstance Id="c792c683-c9d9-48fe-958c-0bb3dd93665b" name="params" value="false">
+                      <elementDefinition Id="40a874b3-b6e0-4874-98c4-8ff84106accc" />
+                    </propertyInstance>
+                    <elementDefinition Id="63d930bc-0788-4f52-b421-efb303bed9d6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="07e2c6b5-5186-4dae-a65d-72607430624d" />
+          </operation>
+          <operation Id="f693a815-0c72-4b62-a409-55fe840e2f6e" name="DisposeMachines" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="a1d49e8a-5282-4635-a3bb-51b4a1bad48b" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=VBox Member=DisposeMachines" tag="ViewCode">
+                <elementDefinition Id="3a70401b-1c38-4537-908d-c6f36c626ae5" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="236bb370-9cf5-459a-ac4f-5b89cfb7b211" name="method" profile="CSharpProfile">
+                <elementDefinition Id="6a9a6272-e045-40d2-9d0f-bed55fc89685" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6e717f01-4942-4b47-8134-f3b181484195">
+                    <propertyInstance Id="26331607-b18c-44db-bf11-3005fbb244cd" name="ClrAttributes">
+                      <elementDefinition Id="12c1dee2-f8ed-4f13-bd1d-5c411a8e9fbd" />
+                    </propertyInstance>
+                    <elementDefinition Id="d8ca43d6-9196-42a3-bed8-9b0442e74371" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e448891d-5071-46da-abc0-347c42f7a44c">
+                    <propertyInstance Id="ec9c474d-484b-4b46-a862-2090ef76b858" name="IsPartial" value="false">
+                      <elementDefinition Id="3a575337-8629-4343-810a-18cb429b416d" />
+                    </propertyInstance>
+                    <elementDefinition Id="e93b15e5-8668-4fb0-90f4-7e4ebb414f3c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e3ea3694-28a6-4cb6-945a-c1a193999e0e">
+                    <propertyInstance Id="5de7c450-c776-4f0a-a7bb-fe180abbb1c7" name="IsUnsafe" value="false">
+                      <elementDefinition Id="980f4ca2-ebc3-464c-9d34-dd9e189c8441" />
+                    </propertyInstance>
+                    <elementDefinition Id="edcce4a6-a64c-4de1-8ecc-1c32bf4737f2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bbbf1fba-316b-44cb-b03f-bc191b7c973d">
+                    <propertyInstance Id="8f29fa6f-bed3-4392-a0dc-3268cfe8f584" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="0362ddcd-d19a-4ea3-b981-2558afe2baf0" />
+                    </propertyInstance>
+                    <elementDefinition Id="1cb749e5-0c24-4224-b34a-04dcf8a75058" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8b9155fa-8dc7-4843-a136-61837ab01ee6">
+                    <propertyInstance Id="8292d162-8379-4a8e-96f8-9d6479da6f03" name="params" value="false">
+                      <elementDefinition Id="ed11727f-512c-4963-a982-19d89f0ac0b3" />
+                    </propertyInstance>
+                    <elementDefinition Id="bf2eb29c-92da-4186-8193-05ad178f3d35" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b876830b-d070-4fa5-81cf-0ee0f36a7e69" />
+          </operation>
+          <operation Id="2a866111-7f6e-40be-8da9-cab8a8c8b2a3" name="VBox" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="0b890e1c-b617-4fc5-a46a-550532a2e9bb" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=VBox Member=.ctor" tag="ViewCode">
+                <elementDefinition Id="93b07990-f6ae-4988-a07c-3ac1fb4f1b0f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="eeae8a1f-6a2d-4646-bda0-f0296a8512fd" name="method" profile="CSharpProfile">
+                <elementDefinition Id="d4e66bdc-76be-4de6-b788-be6492fc9120" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e0c8c1e9-8469-4cf6-b10a-b7801dc93e51">
+                    <propertyInstance Id="11aa3449-30a9-4a90-9751-b88e56bfe1c2" name="ClrAttributes">
+                      <elementDefinition Id="2198e449-9ae2-429a-b038-8b58b20d5df7" />
+                    </propertyInstance>
+                    <elementDefinition Id="34c3cdf2-aa86-4633-95cf-dd36a5074f15" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6909c6f2-50bb-4eb2-9945-8525e99c9029">
+                    <propertyInstance Id="d3815a6d-a359-41db-8d94-c18cdb5b3471" name="IsPartial" value="false">
+                      <elementDefinition Id="d2851c86-8953-4c28-b743-70973f144d9c" />
+                    </propertyInstance>
+                    <elementDefinition Id="3e9ee9cb-e5f2-4ce9-81e4-b40764e3f999" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2ce95dca-4ed7-434d-bf3a-bd400cdffb8f">
+                    <propertyInstance Id="db7b773e-8d31-4f88-b913-80b315460296" name="IsUnsafe" value="false">
+                      <elementDefinition Id="1da9a841-1464-497d-a5a7-8c9b443d7e57" />
+                    </propertyInstance>
+                    <elementDefinition Id="2b032b2c-9a00-4acc-a190-042b0a5347bb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="54d9953b-1f82-4135-9b5e-1fcb12522b86">
+                    <propertyInstance Id="9a48ead1-9a3d-4d9f-9f21-447876e29ed0" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b9915d18-c762-41e6-a3db-0291c29c1e2e" />
+                    </propertyInstance>
+                    <elementDefinition Id="82ae06c1-ad72-4871-b154-01f7f4918e66" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="725e3725-f32d-4984-a4b9-a5f3ea8d4ae9">
+                    <propertyInstance Id="a3ca3c75-96a6-441b-b426-acb3cdb048d0" name="params" value="false">
+                      <elementDefinition Id="fe80d978-fb6b-4172-8771-2551232faca2" />
+                    </propertyInstance>
+                    <elementDefinition Id="6a6d4b9a-5031-4f99-85b9-52c91876b41f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="3ae13c03-12d8-40f8-a96f-3a6c10792f6b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c3c6a837-6478-4de0-a851-521b0d3bb81d" name="DefaultMachineController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="45324171-caf8-4ab9-abb3-54a874980b21" handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController" tag="ViewCode">
+            <elementDefinition Id="4d77c0c5-c757-40e6-95ce-97d4a2774b15" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="df1d74d9-51c0-4327-aa60-963b48d55925" name="class" profile="CSharpProfile">
+            <elementDefinition Id="cb7b8f5e-892a-40c2-8ae2-e717e82d6911" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="d771591c-9817-43da-94a7-a3411703f950">
+                <propertyInstance Id="c8a6674b-430a-4b88-b33b-fbd5700ab364" name="ClrAttributes">
+                  <elementDefinition Id="c3b1bb32-83c3-4802-9024-5011a0d9f012" />
+                </propertyInstance>
+                <elementDefinition Id="627a207a-9957-4d73-85c2-600cfd7bb70e" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ac8bc7f5-c687-4cfb-a335-f6761220771c">
+                <propertyInstance Id="aa2346cf-2121-4944-9608-7d94906bdf25" name="IsPartial" value="false">
+                  <elementDefinition Id="177adfe6-56e4-4d3c-92d5-c32d577ebb2b" />
+                </propertyInstance>
+                <elementDefinition Id="8ebe3518-30ed-48c3-bdf9-ea9b8c099d8c" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3b61bef7-f128-49bc-8299-4606855b69ba">
+                <propertyInstance Id="7db35ba3-9e50-4223-8728-fdf226bcf989" name="IsStatic" value="False">
+                  <elementDefinition Id="b7d3c3c5-aa18-4612-91ca-626ac85f1a41" />
+                </propertyInstance>
+                <elementDefinition Id="44d54bd2-c013-4f1d-a75d-e075e73d9daf" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e147d27d-d3e4-45fc-b902-e77a81f5beab">
+                <propertyInstance Id="b067baf8-2fd5-41cb-b7a3-30a1cedb29b1" name="IsUnsafe" value="false">
+                  <elementDefinition Id="0ac50e76-d1e3-48d5-b0cc-194915e4e459" />
+                </propertyInstance>
+                <elementDefinition Id="24bf6d12-0a07-47ab-bce6-840ad1b4c789" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="38d4e993-fe08-4bd7-ad9f-8081d72226f2">
+                <propertyInstance Id="4f2578e8-b704-4207-8a82-725a56444ca2" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="2151b834-cf81-4bcd-a0cb-d3cf44f7f2d9" />
+                </propertyInstance>
+                <elementDefinition Id="9cf22d18-aa19-49e2-817a-9c2aa30f16a8" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="2b19d4cb-aff9-4bf6-8420-62e378315b50" />
+        <generalsInternal>
+          <generalization Id="1dd8201e-257a-42bc-9f1c-372efb21928c" isSubstitutable="false">
+            <classMoniker Id="63341f23-65e1-44ae-b380-3233ad5af167" LastKnownName="MachineController" />
+            <elementDefinition Id="a0866131-fe44-46d9-8f2e-957b040a1972" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="fa156be2-b1fa-4ffc-ad2d-98303edb4f3f" isDerived="false" sourceEndRoleName="DefaultMachineController" targetEndRoleName="_vbox" isLeaf="false" isAbstract="false">
+            <classMoniker Id="730ee617-388d-479f-bfc9-c564d747e46c" LastKnownName="VBox" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="17c98607-20e8-4df3-8de5-1dad342010f0" name="DefaultMachineController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b27f7dff-4c2b-4a79-b9f4-397c05d3f6bc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc12c541-95e7-4e0f-97c3-2ceb67a7a441" name="_vbox" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f9854f70-05bc-4d22-9d08-de31faa57171" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="73101d3d-bebf-404f-a929-9421c88cd113" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="d57ac8be-e03f-4748-8bd8-b6f6310957de" name="_log" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="0d0000af-2e80-4b08-a13f-628a39bfd3c9" handle="viewcode://./CodeSchema_Field?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=_log" tag="ViewCode">
+                <elementDefinition Id="79536621-2d20-4315-a36b-e7a2c22eb553" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="317e66d7-f871-492f-923b-0ec30491fb47" name="field" profile="CSharpProfile">
+                <elementDefinition Id="c9d152cb-41df-4617-a18c-97ddc1071821" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d686d8cf-ceb1-4a26-9822-01412e43b7b1">
+                    <propertyInstance Id="d6913146-b1d2-45de-aeb3-cb8e9e20c19f" name="ClrAttributes">
+                      <elementDefinition Id="3655c986-cd0b-4540-b32a-354819d37f16" />
+                    </propertyInstance>
+                    <elementDefinition Id="6018e057-1a0c-4aad-88e2-489793463d5f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4350dba9-8a86-4599-8e14-9bb42495e067">
+                    <propertyInstance Id="3e1873c5-e19f-467e-8205-30cad0a2084b" name="IsConst" value="false">
+                      <elementDefinition Id="6aada8e5-eece-4f8c-9beb-c042a22c03a1" />
+                    </propertyInstance>
+                    <elementDefinition Id="2634f569-7aad-4137-b1a2-cc5dfdbbaddd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a3bca5de-78f0-4562-8867-bcbab7b2d4e0">
+                    <propertyInstance Id="54266516-7017-4e50-a473-b804c55a4e6f" name="IsNullable" value="false">
+                      <elementDefinition Id="f230ee43-21d0-4ebd-94bd-bd9a8af946a7" />
+                    </propertyInstance>
+                    <elementDefinition Id="8483a4b6-c806-4c22-a761-5c9705378c70" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eb372cc0-f87b-4c64-894a-7e630c4d5625">
+                    <propertyInstance Id="1edd9fc7-3715-480b-a547-421abbfb68c8" name="IsVolatile" value="false">
+                      <elementDefinition Id="a2c6832a-e7ef-4ddb-87b8-b72c9fffb8bc" />
+                    </propertyInstance>
+                    <elementDefinition Id="17288880-7e64-4c8d-85ea-acb865caed7a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="edc1d05b-5b28-44d9-94f6-f78f1eca517c">
+                    <propertyInstance Id="f92284eb-b4dc-465a-9800-25dc974211f4" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f87cff16-bea2-4eaa-8aa0-28b8e7cfe4f2" />
+                    </propertyInstance>
+                    <elementDefinition Id="92f07ed8-8719-434c-8657-c67ddd9ffb2c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e21b2f98-f16c-42f5-99d8-df76b46495bc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="948899df-9f37-4f40-b6f1-24a122cdf199" LastKnownName="TraceSource" />
+            </type_NamedElement>
+          </property>
+          <property Id="04ef7dfc-6227-45f2-8ba7-df823f8e2573" name="_timer" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="57bfade8-1ad3-418a-b601-9c686ad4508f" handle="viewcode://./CodeSchema_Field?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=_timer" tag="ViewCode">
+                <elementDefinition Id="605ffda8-651e-4dfa-821a-f0e2697fd5c6" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="582bb7eb-b147-4942-9c87-bae0d1ac90bb" name="field" profile="CSharpProfile">
+                <elementDefinition Id="c69684d6-fa73-4820-ac1b-6344cc24ddc8" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="90df184c-727d-44ad-9f12-e8fa438c54d9">
+                    <propertyInstance Id="6fe9df08-61f2-4702-be39-48922cc72529" name="ClrAttributes">
+                      <elementDefinition Id="490996fc-8aee-4879-9edb-d567ac03429d" />
+                    </propertyInstance>
+                    <elementDefinition Id="fe871d30-a284-4acb-9d84-639c307c439c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e25f5aee-0312-4a26-83c5-895e865be9ca">
+                    <propertyInstance Id="e045ee25-5bab-4361-bde0-ff57487cdbb2" name="IsConst" value="false">
+                      <elementDefinition Id="bd6da077-0b9d-4581-825d-0c7c31de134c" />
+                    </propertyInstance>
+                    <elementDefinition Id="a050850d-58d7-4e4f-9064-989545604ec9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="18c1315b-1302-4f01-a04f-3617f752059e">
+                    <propertyInstance Id="f9374fa2-04cf-48ed-b59b-4a1dfb4280c4" name="IsNullable" value="false">
+                      <elementDefinition Id="ab858b63-3012-4680-b33c-b6fac7ab6a0a" />
+                    </propertyInstance>
+                    <elementDefinition Id="8a392949-9b69-40a6-8354-b0108d848625" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="58b9c72f-b0ff-47ee-b161-280ac7f87b7c">
+                    <propertyInstance Id="b26b050d-b808-48b5-a9d2-649aa7e92fcf" name="IsVolatile" value="false">
+                      <elementDefinition Id="f5fc350c-5a69-4a20-97fb-8cebc40a0354" />
+                    </propertyInstance>
+                    <elementDefinition Id="cc5b54e7-b191-4bb0-8296-5baed3d1d9aa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="87c3adcd-8d76-4415-b2e1-b6eaee52a890">
+                    <propertyInstance Id="595cad53-53dc-410b-9040-a16104423476" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b2918b10-5012-4c53-9a13-7565f052f8eb" />
+                    </propertyInstance>
+                    <elementDefinition Id="22247de0-bf15-4139-b662-58eb47da7817" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="0a8dd6b2-86e2-45b1-b754-30ebe0fbcd04" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="46f2b94f-266a-4479-b825-eb111bfec773" LastKnownName="Stopwatch" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="9a013755-8a04-4b78-9296-7cf53b883313" name="DefaultMachineController" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="f6e3c11d-7e4a-4182-af90-b12750f94e64" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=VBox)])" tag="ViewCode">
+                <elementDefinition Id="1e4a4c2b-c654-414e-b585-c1f0f5421f95" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="cd144cbc-0667-4fe5-8c30-4b3fc2a63122" name="method" profile="CSharpProfile">
+                <elementDefinition Id="e6abb62c-daf3-47a4-bfe0-c2694cb60112" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f76b81b4-9c8a-453b-a94d-39a07531b488">
+                    <propertyInstance Id="8a19bce7-2aef-4ab2-a070-ec2130c06c46" name="ClrAttributes">
+                      <elementDefinition Id="7b28d1de-cafc-4146-87f3-396f701f6b18" />
+                    </propertyInstance>
+                    <elementDefinition Id="faf534c4-b68e-4f1d-b3ad-1985f27860cb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9d18fde9-2b58-4ba8-b823-17e778e7a8b6">
+                    <propertyInstance Id="0915799b-15e7-4194-ba6c-a41c12feb4b9" name="IsPartial" value="false">
+                      <elementDefinition Id="3509f33d-2c0d-4c31-9b33-e003217544b8" />
+                    </propertyInstance>
+                    <elementDefinition Id="bb666f09-9a5b-4179-96ce-078c8710ab4e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="be9dbbe3-6534-41cf-8d80-0ba0998f43bc">
+                    <propertyInstance Id="2db90ef3-ad15-4984-8691-cde8cbb6b4ee" name="IsUnsafe" value="false">
+                      <elementDefinition Id="a932f100-7558-4f63-8510-1b61c5dc7800" />
+                    </propertyInstance>
+                    <elementDefinition Id="7b8a5fce-5303-4f50-9e84-5716d1213213" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="db3a588f-7635-48dc-9e07-74aadd629b6d">
+                    <propertyInstance Id="07a57341-dc76-4c44-ae36-5235ac40d982" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f1814cfc-561a-47c8-a5e2-f99a646b94cd" />
+                    </propertyInstance>
+                    <elementDefinition Id="e6589ff8-1e45-4bb9-ad4c-2459b69b1e67" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b2b9b948-4d13-4fcb-b13f-93eb5a63152e">
+                    <propertyInstance Id="b1cafbc8-2e83-4364-9fc2-4366f2bf0d9e" name="params" value="false">
+                      <elementDefinition Id="b6614bd3-a064-42a1-ae0f-5c7636815eb9" />
+                    </propertyInstance>
+                    <elementDefinition Id="723dec07-8c88-456f-8574-d4150fbedadc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="6970cef5-058e-4895-8283-3d84eb988a4f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d0881f2c-c1c2-4db5-87e0-73fd2f507e3f" name="vbox" direction="In">
+                  <referencesInternal>
+                    <reference Id="72fd234f-f773-4f24-8294-6dd3631cca6b" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=VBox)]) ParameterIdentifier=vbox" tag="ViewCode">
+                      <elementDefinition Id="5c78f2b6-5a99-439c-a325-99b9db502c20" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="5637545a-2d6c-448c-8fe1-10a4a3dc21a1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e62c5c7c-b3f2-44ff-b293-9be64f4333a9" LastKnownName="VBox" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f252ef12-f0fb-4d2b-b4c0-ba3b27309a81" name="awaitAcpiShutdowns" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="905400aa-2cfa-4d8e-bb19-a8d9a5886823" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=awaitAcpiShutdowns OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=IEnumerable GenericParameterCount=1 GenericArguments=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineProgressTokenTuple ParentType=DefaultMachineController))])),(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))])" tag="ViewCode">
+                <elementDefinition Id="ed1da187-f0e6-43d6-af6e-921bbb91df83" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="52438333-9ef6-4b0f-827a-b73bbcd121c9" name="method" profile="CSharpProfile">
+                <elementDefinition Id="91a715c6-de3e-4d3a-a27b-46cf024aec96" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b4bd40e7-77f0-4af0-a4d3-95c5bd571712">
+                    <propertyInstance Id="e1ee3bef-b9ce-438b-a1ad-9517e30139f8" name="ClrAttributes">
+                      <elementDefinition Id="7361778f-a7b4-4ddf-8434-6851cb6255e8" />
+                    </propertyInstance>
+                    <elementDefinition Id="e318a0fe-ad3a-4c9a-8749-258fb3cd9b85" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="280a89c5-1425-4eb2-8d32-df6bd39a49c1">
+                    <propertyInstance Id="fb06f27c-c9c1-42da-9de1-a7db81676f47" name="IsPartial" value="false">
+                      <elementDefinition Id="46040e93-089e-4544-9be5-8a68295e65c8" />
+                    </propertyInstance>
+                    <elementDefinition Id="0f11ee75-0153-4ff6-b52b-67a2baebe1a8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d2c2e549-c262-49c8-810a-24d2166fdff8">
+                    <propertyInstance Id="7ea76c7b-af04-4827-be6b-bbd64a24f6d3" name="IsUnsafe" value="false">
+                      <elementDefinition Id="af907fa9-511e-47c5-8080-361bc955a859" />
+                    </propertyInstance>
+                    <elementDefinition Id="6326d7fa-665b-4cc2-95cf-c141ceccc22e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c13c8827-3573-4b55-8d36-9eb20b62358f">
+                    <propertyInstance Id="43843eaf-a821-4610-9689-c750088ce3bb" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a5166ea9-ba67-4059-b4b1-3a53963169eb" />
+                    </propertyInstance>
+                    <elementDefinition Id="df38c830-74ec-4873-8eea-9077d8198852" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="063e3e7f-f032-407a-a31e-63d51c78f3de">
+                    <propertyInstance Id="ec0dbc09-78c8-481d-8bec-6ca1059f5e64" name="params" value="false">
+                      <elementDefinition Id="b63e05a2-da1f-479a-9f1c-871c004ed310" />
+                    </propertyInstance>
+                    <elementDefinition Id="65329f6b-dba1-415c-97a3-11a9181356f0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ae776233-03f0-4baf-95e4-dd8ef24bd1aa" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ee16849d-107a-4b6e-a2f6-4b27fd713935" name="shutdownsInProgress" direction="In">
+                  <referencesInternal>
+                    <reference Id="b16a5cb9-c7e5-409a-810b-d6e09d3bc652" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=awaitAcpiShutdowns OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=IEnumerable GenericParameterCount=1 GenericArguments=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineProgressTokenTuple ParentType=DefaultMachineController))])),(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))]) ParameterIdentifier=shutdownsInProgress" tag="ViewCode">
+                      <elementDefinition Id="0240dc3a-1345-4b23-9ae6-041fdbac8b8b" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="cca3b8ec-dbf5-466d-8fd0-17f3e564a09d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1dd85dea-f8ff-42fc-be0a-66092a4b43f1" LastKnownName="IEnumerable&lt;DefaultMachineController.MachineProgressTokenTuple&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="406387b7-1867-4e15-ab56-efe2d0f26570" name="sucessfulOperations" direction="In">
+                  <referencesInternal>
+                    <reference Id="7d1843e3-0f9c-4674-8992-27e78b3aeebd" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=awaitAcpiShutdowns OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=IEnumerable GenericParameterCount=1 GenericArguments=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineProgressTokenTuple ParentType=DefaultMachineController))])),(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))]) ParameterIdentifier=sucessfulOperations" tag="ViewCode">
+                      <elementDefinition Id="b0f11621-0d31-4e16-a5f0-3c827ecb254d" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="14fdc798-eae2-4a32-b683-a3324356619b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9d47f53a-bdec-435a-af8c-7af38ddb2d56" LastKnownName="MachineOperationToken" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="24033c70-9e30-4b95-8a9c-c8c7429148a9" name="beginShutdownOfACPIShutdownMachines" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="ee1f8aef-4668-4d83-bb47-98827114b258" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=beginShutdownOfACPIShutdownMachines OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))])" tag="ViewCode">
+                <elementDefinition Id="ce12443f-43ac-4c32-bc92-862a804a5a3c" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="50f667f7-f3af-4fa1-b34e-4093a6b6f249" name="method" profile="CSharpProfile">
+                <elementDefinition Id="dc43d551-e55e-416c-9740-b43d40ead73e" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="048bcfea-2385-408d-9f68-70745124efb5">
+                    <propertyInstance Id="50e38087-b30d-4527-a572-8c0944767a5a" name="ClrAttributes">
+                      <elementDefinition Id="35e12456-bbda-41e1-9306-39998efc213b" />
+                    </propertyInstance>
+                    <elementDefinition Id="f53be6de-2106-454e-97bd-e165fee94891" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="abf122ff-8288-49ae-a4bd-4e19f6fafdf7">
+                    <propertyInstance Id="9d9da39b-7cad-4bf5-a6cc-30a4bc9ff32c" name="IsPartial" value="false">
+                      <elementDefinition Id="07ce57fc-b1af-4753-8cee-0023296105b4" />
+                    </propertyInstance>
+                    <elementDefinition Id="db06e780-30b5-42ea-933d-f8dc6d1dfe5a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3254821a-93c5-4a16-bac2-57949e08f4d2">
+                    <propertyInstance Id="fb6f0456-e325-4184-a9e2-243ef7faae24" name="IsUnsafe" value="false">
+                      <elementDefinition Id="3e5ad06b-887a-4d4f-b063-d89ec46dc547" />
+                    </propertyInstance>
+                    <elementDefinition Id="b98227da-cfe1-4c77-821a-9010f6165e5d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1af59697-649d-4acd-9ea9-30bd3f7a0750">
+                    <propertyInstance Id="c80309db-3880-4692-8b44-bc34bed76b64" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="0e78f74f-0860-4a7b-9f55-db854c595710" />
+                    </propertyInstance>
+                    <elementDefinition Id="77bced31-e5a5-4079-89fc-3db26a898a83" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b5a82da4-a689-4a08-a394-8e0aa30f9804">
+                    <propertyInstance Id="192bb220-43a4-414e-8b99-a43d7496df28" name="params" value="false">
+                      <elementDefinition Id="9e7ec3ce-7c6d-4211-8399-89ba46d20634" />
+                    </propertyInstance>
+                    <elementDefinition Id="3a934d27-d3bd-44ce-8349-ea4e530ba4bf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="90af7cfc-cfdd-4646-92ae-1af998d37d47" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7d9aaddc-00f6-43e7-9f7f-e3b396368e7f" direction="Return">
+                  <elementDefinition Id="e50484f5-9871-4872-9f6c-659073c8c30d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3f8a765-5a7d-4dc5-a328-1d31127ca416" LastKnownName="IList&lt;DefaultMachineController.MachineProgressTokenTuple&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a5c761e0-6eb1-476b-9662-07cc21064100" name="token" direction="In">
+                  <referencesInternal>
+                    <reference Id="b0e1bdf3-8d27-4c74-a3dd-6b2bdee84a53" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=beginShutdownOfACPIShutdownMachines OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))]) ParameterIdentifier=token" tag="ViewCode">
+                      <elementDefinition Id="f1e4c90e-50ce-472f-b124-c8cb76c5a4d8" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="37d535f2-b1d1-454d-92c6-ec8da50df7b6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9d47f53a-bdec-435a-af8c-7af38ddb2d56" LastKnownName="MachineOperationToken" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e30e4c39-3072-47fd-8d8d-2a10885b842e" name="hardOffRemaining" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="07d1cda4-53c6-4dfc-8c2f-bb10ec545a7b" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=hardOffRemaining OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))])" tag="ViewCode">
+                <elementDefinition Id="6a37addd-efec-4615-9c96-79c8756f1275" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b61ec826-de02-494f-907a-0cccb0fec834" name="method" profile="CSharpProfile">
+                <elementDefinition Id="54d87271-d791-422a-8c63-88bc8623476b" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5950bb15-ce9f-445f-8de2-373883072396">
+                    <propertyInstance Id="82882990-fc64-402d-a73d-df5a9cd7d0bf" name="ClrAttributes">
+                      <elementDefinition Id="398da1c2-985f-47b4-840e-b7a742b13e00" />
+                    </propertyInstance>
+                    <elementDefinition Id="ab4d0fb6-fd8d-4506-aa6b-2c63159f04d1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="900f9f62-34f3-4cbd-a5b5-b3d10dd2a123">
+                    <propertyInstance Id="30a48d16-8cc4-4479-903a-8614de32701e" name="IsPartial" value="false">
+                      <elementDefinition Id="6ce052ed-7bd2-455f-b878-8a3acd9211cb" />
+                    </propertyInstance>
+                    <elementDefinition Id="3b436263-ec5f-4e06-81a2-29a98ffdfc38" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="58cd858e-7906-44a2-8bcd-ea0fc349767e">
+                    <propertyInstance Id="86968d8c-6758-4705-8952-70c1f65ace5e" name="IsUnsafe" value="false">
+                      <elementDefinition Id="c83e217b-cfde-4171-b43b-691fa3bee85e" />
+                    </propertyInstance>
+                    <elementDefinition Id="420b2b23-c9b1-459c-b600-8c06fd3a14e8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ab948b91-1f1c-4c1a-ad36-e2a207909b78">
+                    <propertyInstance Id="91506ae8-0ea3-4dca-9c64-df6c1f31075a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="36912adb-7198-4e9e-a24a-fccd466d6a3d" />
+                    </propertyInstance>
+                    <elementDefinition Id="f1d0364e-9bc5-4b1e-bbe1-0a97d49e00bc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d7817d0f-cf5f-4558-bc68-73df49c37615">
+                    <propertyInstance Id="bf23574e-7947-4ffc-8f05-00cd3988aff6" name="params" value="false">
+                      <elementDefinition Id="855594e4-af78-409e-b5f9-ddffcaae93c9" />
+                    </propertyInstance>
+                    <elementDefinition Id="16a5ce69-bf6c-450c-b351-fc25c230c4c8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="51ff4025-c168-4c5e-8e6d-b826f60d8a51" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dc3b9cc5-e614-4f53-8059-da881bcc1a5b" name="successfulOperations" direction="In">
+                  <referencesInternal>
+                    <reference Id="73f760f1-73b7-4e5a-b284-9d562404f70b" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=hardOffRemaining OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))]) ParameterIdentifier=successfulOperations" tag="ViewCode">
+                      <elementDefinition Id="9064d3d6-6a19-4549-a707-2107626a8e63" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="094ba20e-fc11-488c-ae83-fc5d9cfecbc2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9d47f53a-bdec-435a-af8c-7af38ddb2d56" LastKnownName="MachineOperationToken" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ed2f09d0-1633-4684-817d-6a54e3cadbaa" name="shutdownMachine" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="42b88b89-d055-4fa8-8c74-13d9d747c713" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=shutdownMachine OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController)),(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=Machine)])" tag="ViewCode">
+                <elementDefinition Id="8b53eead-f713-4fa3-ab12-c7249e67dff1" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="aa8f63ef-349f-435d-a7a2-8df25a152c6d" name="method" profile="CSharpProfile">
+                <elementDefinition Id="2f07abe5-28aa-44e2-bcad-698aa94a2213" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1c5a66f6-fe92-46e8-9d1c-562560645174">
+                    <propertyInstance Id="9d171b97-b1e9-4bb7-a0fb-4de745225b1b" name="ClrAttributes">
+                      <elementDefinition Id="04b9ee39-06e9-4405-bac1-3a6d15825c3f" />
+                    </propertyInstance>
+                    <elementDefinition Id="12a43230-fac0-4411-bf7c-ca6dc5c73fc9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a6573360-591e-49b1-aa6f-1dca9ec05f76">
+                    <propertyInstance Id="2d67fa17-eaaa-454f-885b-df04f76694b5" name="IsPartial" value="false">
+                      <elementDefinition Id="84dfaa59-8fa4-4c11-8c43-d779eb3db8f1" />
+                    </propertyInstance>
+                    <elementDefinition Id="341ca576-b4a7-49ad-b359-cbb67a6e7a68" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ba35098f-46dc-4147-bb81-df77767c006e">
+                    <propertyInstance Id="8f943890-2136-44cb-b757-26b45c4c9556" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f643609f-8b5d-44ea-8ab6-ca362f52e7f8" />
+                    </propertyInstance>
+                    <elementDefinition Id="649394f0-8884-459e-bcae-a2454bccc811" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="14c84db6-d566-495d-bb90-e1ed0871663b">
+                    <propertyInstance Id="64e75df9-1707-47a1-8c3d-36fbc25fe670" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="8d2c2cbd-20d9-41cd-927a-2754ef52b26a" />
+                    </propertyInstance>
+                    <elementDefinition Id="044a8f6a-ef29-45b6-be0c-df34f4c60e2d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c322475a-47fb-4a46-b34d-5d8a853f725e">
+                    <propertyInstance Id="ab1e6c7a-aece-470e-93cf-cc50fd084c86" name="params" value="false">
+                      <elementDefinition Id="dc9b630d-4d55-4e01-9bfa-107f22e40ef2" />
+                    </propertyInstance>
+                    <elementDefinition Id="8feb8769-eca6-4c79-ab4e-000a633c27ea" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="4297ef1f-de39-4b35-89c0-63a24763c373" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="309bbd43-68d0-456a-86bd-859a67de3b1c" name="successfulOperations" direction="In">
+                  <referencesInternal>
+                    <reference Id="0d756331-9b06-4a3d-bbbc-a66b864f840d" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=shutdownMachine OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController)),(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=Machine)]) ParameterIdentifier=successfulOperations" tag="ViewCode">
+                      <elementDefinition Id="5fb69365-ff3e-46f9-ac3e-39246fd3dd56" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="aa835691-fa1b-4b1f-b8f0-3611a038dfd3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9d47f53a-bdec-435a-af8c-7af38ddb2d56" LastKnownName="MachineOperationToken" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0da89d96-afa3-466e-b1e8-08e68fc6455f" name="m" direction="In">
+                  <referencesInternal>
+                    <reference Id="f873d577-6d1d-4006-bdfd-e0f19ad41621" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=shutdownMachine OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController)),(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=Machine)]) ParameterIdentifier=m" tag="ViewCode">
+                      <elementDefinition Id="a0dd4f72-d968-44ea-96e1-3c70b446d541" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="f657ae83-30fb-4e24-a76e-d620efb63e8f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2b040156-0766-495a-8677-b993a06515f8" LastKnownName="Machine" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c36e1abd-ebff-49c5-b1a0-638fae003e5a" name="shutdownSaveStateShutdownMachines" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="e516cf06-e2e7-4619-8017-8cf460e4cdf2" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=shutdownSaveStateShutdownMachines OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))])" tag="ViewCode">
+                <elementDefinition Id="e136ada6-a1b4-40cc-8038-09e4c887271b" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b8603c60-f368-4e7a-a8bf-db8df025844c" name="method" profile="CSharpProfile">
+                <elementDefinition Id="4d3af791-a933-469d-89c9-d8860090c4a0" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="47a62258-0fa3-49da-a865-8bbcf1db9e87">
+                    <propertyInstance Id="815976ff-145f-4101-998f-f9b0d656d56d" name="ClrAttributes">
+                      <elementDefinition Id="ac804b79-a7ea-4078-b087-956e59809b87" />
+                    </propertyInstance>
+                    <elementDefinition Id="600ddc59-efdf-4482-810e-7e54072749bc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1ec6f025-437b-48ea-9aa2-68e69b8142a2">
+                    <propertyInstance Id="60d56f4d-14fd-4ca5-92bf-ae8b1f16a9de" name="IsPartial" value="false">
+                      <elementDefinition Id="a54e3cde-adc5-4531-bbbb-2141e1b5c1e4" />
+                    </propertyInstance>
+                    <elementDefinition Id="a3b3d569-eb81-4acb-8f3f-9d169db3ac2b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c41a2f60-b490-4bde-b826-ae8c0917343a">
+                    <propertyInstance Id="25b4de05-616f-4b3d-acb9-84f3374f631c" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d038d6be-9218-4461-b77c-a6adc6b34993" />
+                    </propertyInstance>
+                    <elementDefinition Id="3caefb80-1969-432b-804f-513798f03f18" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6b239674-6717-4936-ac87-d456bbe349b9">
+                    <propertyInstance Id="8d5fb0d6-f47d-477d-8827-09b19a93181e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f88af719-cfdc-44e4-a37a-a7c94915ca06" />
+                    </propertyInstance>
+                    <elementDefinition Id="fb30b0b0-86c8-47c4-8225-ac6591482fae" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6fa0ed44-acb9-4856-b96b-ad3508067aed">
+                    <propertyInstance Id="57587a1d-c182-4189-92d0-14cbc515b337" name="params" value="false">
+                      <elementDefinition Id="819920fe-11d5-4b6b-a33c-90f7defbe161" />
+                    </propertyInstance>
+                    <elementDefinition Id="fb9647eb-2ed0-4f39-a2d6-2d7e51e0961f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="96be301e-bfcf-4306-9f76-0fdfdaf87263" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fe828baa-a757-4df4-ae58-ec5cb20f9a4b" name="token" direction="In">
+                  <referencesInternal>
+                    <reference Id="2ef88701-6bbc-42e1-afbd-337565928e35" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=shutdownSaveStateShutdownMachines OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))]) ParameterIdentifier=token" tag="ViewCode">
+                      <elementDefinition Id="fd4a0d19-f197-4470-b366-54f5233a4b7c" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="e5c64fec-0eab-491d-a3f5-8ba08a3b1d34" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9d47f53a-bdec-435a-af8c-7af38ddb2d56" LastKnownName="MachineOperationToken" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d92487b5-4bf1-4986-affb-e1c33b18fce3" name="startMachine" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="d2697f79-a7c9-4a13-b1ec-6fd2fe80351d" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=startMachine OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController)),(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=Machine)])" tag="ViewCode">
+                <elementDefinition Id="7c4bb237-d5e0-4fe1-909c-7b6df16c6928" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="1c231073-5a81-440b-a83f-df8ad569f62b" name="method" profile="CSharpProfile">
+                <elementDefinition Id="ed75d607-5647-4f0c-84f0-e3e223f41e18" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6ddc219a-a411-4fb7-8b39-feafd78d2346">
+                    <propertyInstance Id="29ec4ce2-b9e3-41d4-a32c-315f96e9cbd5" name="ClrAttributes">
+                      <elementDefinition Id="83f6653b-53aa-47a9-b598-dc6393296639" />
+                    </propertyInstance>
+                    <elementDefinition Id="d861b0f4-7acf-4ee5-83ba-6bc29cc15295" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5afd92fe-c481-462a-8b0d-722b458d6113">
+                    <propertyInstance Id="5099e8d9-b605-47e3-8a98-9a473969d2e8" name="IsPartial" value="false">
+                      <elementDefinition Id="9d92cf90-f45b-4c46-91e9-e21941a38988" />
+                    </propertyInstance>
+                    <elementDefinition Id="a8d934ba-7ad1-4bc9-ae53-d96f6ef7c214" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="91040c86-6fd6-478b-9fdd-b613f2554a93">
+                    <propertyInstance Id="eb794952-9b46-42a6-8585-a9dd25a1da79" name="IsUnsafe" value="false">
+                      <elementDefinition Id="04639a8c-51b0-479a-a419-fddc563be7fa" />
+                    </propertyInstance>
+                    <elementDefinition Id="2748c27d-a4c0-4e6c-a081-7b9acb7f3004" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f39e542b-a9cc-4497-8fb0-0600b77159f2">
+                    <propertyInstance Id="f3f7a018-b52d-47de-a795-6290ceac9df8" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="8c181126-4172-4a9d-b533-55121e38ff5b" />
+                    </propertyInstance>
+                    <elementDefinition Id="a55d0ba0-f771-4c06-96f5-576cb68e3d15" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b6ee636f-bc36-4270-906a-6a130149f475">
+                    <propertyInstance Id="b59dad88-bb5d-48d4-8754-be9fc5ac91cd" name="params" value="false">
+                      <elementDefinition Id="4c9d9f1f-5b7d-43d2-b089-cd1d1e1d23e6" />
+                    </propertyInstance>
+                    <elementDefinition Id="19951e47-1d30-4c39-8e33-3bd3407dbe15" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e0d5af80-8c6f-4e2d-ae48-0e78a97fe79a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3d37af8d-e9e5-4d9b-b88e-03cbc484547c" name="token" direction="In">
+                  <referencesInternal>
+                    <reference Id="39386b6a-cf51-47a7-babc-c9616be87c40" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=startMachine OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController)),(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=Machine)]) ParameterIdentifier=token" tag="ViewCode">
+                      <elementDefinition Id="52c3c36a-931e-49ed-9632-69abebb2c5cb" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="c0551991-d1a0-4fb8-aef5-c48c4cd5ef09" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9d47f53a-bdec-435a-af8c-7af38ddb2d56" LastKnownName="MachineOperationToken" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a27f0b9d-e047-4475-bb85-ad809023eb0f" name="m" direction="In">
+                  <referencesInternal>
+                    <reference Id="4248f345-055a-46b2-9640-abaf37ee79d4" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=startMachine OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController)),(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VBoxWrapper/bin/Debug/VBoxWrapper.dll&quot; Namespace=VBoxWrapper Type=Machine)]) ParameterIdentifier=m" tag="ViewCode">
+                      <elementDefinition Id="4f0264ee-6db4-429e-8e81-839c927f8ad4" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="9058be6f-31f3-405f-8894-7eddc9556145" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2b040156-0766-495a-8677-b993a06515f8" LastKnownName="Machine" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="eedcac79-e404-407b-b390-3a993dadd18b" name="startOtherMachines" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="305f3372-6db1-42d2-bfa2-80df933aac59" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=startOtherMachines OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))])" tag="ViewCode">
+                <elementDefinition Id="1cbc30fc-51c5-4d9e-8520-00077861cebd" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="65036a2c-2e84-4a0a-bcdf-d697659822b7" name="method" profile="CSharpProfile">
+                <elementDefinition Id="a5855023-74e6-4283-a80b-8b9653a93b9c" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="398f21bc-9e15-4e98-8d3a-2931b2a33bf2">
+                    <propertyInstance Id="74d83bd4-b310-4f2b-a8a1-46a0ef3870d7" name="ClrAttributes">
+                      <elementDefinition Id="87710dd0-1f44-40d0-ba31-8581e160449a" />
+                    </propertyInstance>
+                    <elementDefinition Id="005c0d90-76b4-432b-bbaf-8c523cda27e6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d84cb5c4-3815-4126-ac99-f48deed380c2">
+                    <propertyInstance Id="7dd03c04-1fbe-437e-8848-c41ad29e61a4" name="IsPartial" value="false">
+                      <elementDefinition Id="3ca46eeb-9ac6-49ff-a0fa-773d293b7256" />
+                    </propertyInstance>
+                    <elementDefinition Id="3d5d7cdf-f9ed-4761-a369-cbf91afc417e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6cf2a529-0625-401d-984a-378394878242">
+                    <propertyInstance Id="c58cc359-edcc-44cf-92d4-3af116ec6b6e" name="IsUnsafe" value="false">
+                      <elementDefinition Id="1e3dbbf8-b98a-4bb9-92ea-1ca534fd21f2" />
+                    </propertyInstance>
+                    <elementDefinition Id="c5939d17-c459-4487-a472-b49b051085c1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="97b49f3d-63cc-4154-bd3f-866f317eedce">
+                    <propertyInstance Id="60802800-9394-4870-9dec-b098a2729681" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="3b2fc504-0909-46ba-b8d7-320241871b95" />
+                    </propertyInstance>
+                    <elementDefinition Id="1d84a5bf-d895-4459-9f54-99e17c6f552d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3b865f1a-04ad-4012-82d3-a30529c11ba6">
+                    <propertyInstance Id="be5c499a-1ad1-4f86-bb40-ba998d2fa965" name="params" value="false">
+                      <elementDefinition Id="774f71ac-9590-4353-b205-c4f71efb0442" />
+                    </propertyInstance>
+                    <elementDefinition Id="70d6e499-793b-48f9-bef7-cd32c208b2c2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b8f042d4-6d3f-45fe-988d-d6ebe5f5a07d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f4f49b3f-9d1e-42a1-9e5a-a88e28472ebe" name="token" direction="In">
+                  <referencesInternal>
+                    <reference Id="e4f658de-2b4d-422a-af17-4daa174840c1" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=startOtherMachines OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))]) ParameterIdentifier=token" tag="ViewCode">
+                      <elementDefinition Id="89b0d545-ae8f-4cb1-b0f3-ea45b6bc29fa" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="6f450d72-5faf-4a7d-9964-15c75bba1854" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9d47f53a-bdec-435a-af8c-7af38ddb2d56" LastKnownName="MachineOperationToken" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a5d99621-c2df-4a4e-b940-69605fa12675" name="startSessionSavedMachines" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="f79f86b9-bb8c-4aea-9d22-8a783e80fbe1" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=startSessionSavedMachines OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))])" tag="ViewCode">
+                <elementDefinition Id="6f75600c-6616-4487-84cf-f9eb2a38ce33" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b98e9375-e4d2-43b6-b682-6ecea63937d4" name="method" profile="CSharpProfile">
+                <elementDefinition Id="2d6ad49f-826a-40bc-8a04-dc86bd433ef0" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="da853788-af08-4b34-a8f1-163ff5187599">
+                    <propertyInstance Id="0d88cffd-8416-45ff-bb91-2b55c46dc08c" name="ClrAttributes">
+                      <elementDefinition Id="a3528902-c4d8-4928-bcb6-568f76d58a46" />
+                    </propertyInstance>
+                    <elementDefinition Id="4921b3eb-24d9-4a5f-830d-9d45dcccb6ab" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9e368305-d8d9-47ea-85d7-81331e100452">
+                    <propertyInstance Id="a322c870-fa4f-4cfa-9ffb-7e60bdfd0206" name="IsPartial" value="false">
+                      <elementDefinition Id="1bc4763b-0211-4b09-be92-c767429be238" />
+                    </propertyInstance>
+                    <elementDefinition Id="ab65d5c0-7145-4e73-a53c-40c9e1b4e088" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="89589624-b5c9-41fe-a685-a70d6ce5118a">
+                    <propertyInstance Id="c651031c-6bfc-4a18-b6fc-596d0e2195bd" name="IsUnsafe" value="false">
+                      <elementDefinition Id="e8d09d01-cc69-4d98-a5aa-d4e231bd4b4f" />
+                    </propertyInstance>
+                    <elementDefinition Id="1b3c3f87-88a8-4bd2-a405-f25698a71b7d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="19b4b26d-b00b-4df6-a54c-13a5d72d4dcf">
+                    <propertyInstance Id="101c5053-4f01-459e-9a06-fc41d5bb1a30" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="3d37a2ca-4716-4b6e-bc19-98e5de5547c9" />
+                    </propertyInstance>
+                    <elementDefinition Id="6cc87b7a-9a80-40f1-bb6c-400ff4ff41c1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="917a01ee-72c6-4cb3-9f5f-d5a364217b29">
+                    <propertyInstance Id="e4b425ff-de81-4e7e-8d43-90cfcb8097d8" name="params" value="false">
+                      <elementDefinition Id="b341e35e-09d1-4a26-91d9-91db7439a921" />
+                    </propertyInstance>
+                    <elementDefinition Id="f0f8513b-383d-475d-b8b6-f936f336f124" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c104cd1f-2929-4270-8e0a-bf1f8ac1bcca" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ef17bb64-fb34-4691-bd79-80653c23c2a2" name="token" direction="In">
+                  <referencesInternal>
+                    <reference Id="db8441da-64bd-425b-9f0a-63ca5da427c1" handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=(Name=startSessionSavedMachines OverloadingParameters=[(Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=(Name=MachineOperationToken ParentType=DefaultMachineController))]) ParameterIdentifier=token" tag="ViewCode">
+                      <elementDefinition Id="f408f6e0-dec6-45fa-bfde-fe24d804ebcb" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="14471d3e-3983-4210-ab8b-c0b73bbea3b1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9d47f53a-bdec-435a-af8c-7af38ddb2d56" LastKnownName="MachineOperationToken" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ab3f3a37-4beb-49a4-a29a-bb11a38d2227" name="Shutdown" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="7d10f73c-8aa6-4805-9138-706d55015c5c" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=Shutdown" tag="ViewCode">
+                <elementDefinition Id="7d61343d-7202-4d7d-b645-0d55efa1dab6" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="050bb974-5118-40c1-933b-c2d18485ee84" name="method" profile="CSharpProfile">
+                <elementDefinition Id="c35d2894-6eb3-4d8b-ad80-bbe550483ced" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d486e4aa-37af-468b-97ab-409d6922ca6f">
+                    <propertyInstance Id="39d7a5f4-b035-481f-9d97-1536ce3438fd" name="ClrAttributes">
+                      <elementDefinition Id="37620963-532e-462b-93ed-9fa5aeca32e4" />
+                    </propertyInstance>
+                    <elementDefinition Id="fe2644b3-8a79-49d0-ad51-e5aafc478a7e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="293d354c-925c-4178-b43f-8426d57a9735">
+                    <propertyInstance Id="bc687b20-35ea-4c8c-adab-9cfde0f83405" name="IsPartial" value="false">
+                      <elementDefinition Id="2824f093-49e1-46ba-97a8-dd013f3c67a9" />
+                    </propertyInstance>
+                    <elementDefinition Id="6ff2f405-ae53-43f1-9b85-a6c4b45d3036" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2d7d16e8-4f9e-4e12-bbec-06124d0c6a2c">
+                    <propertyInstance Id="d16ccabd-6a47-4747-a23c-087d5234b9ff" name="IsUnsafe" value="false">
+                      <elementDefinition Id="81e3a627-2ea2-41e6-9fa7-6241a2325894" />
+                    </propertyInstance>
+                    <elementDefinition Id="8ceb25f0-810f-4e68-8f24-82e941a6178c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="355a77bf-b4af-402e-8135-7b27467d6189">
+                    <propertyInstance Id="1b107cfe-64c2-41a5-a511-943145ff603e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ab52abee-54a9-450e-a05c-9abb663f38bf" />
+                    </propertyInstance>
+                    <elementDefinition Id="a9284014-f4fa-4ef8-9763-eae71289f403" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ea14b1e2-dc8a-48ff-b349-cea587754c37">
+                    <propertyInstance Id="74db48fe-5f03-4ef2-9322-6410742a1a47" name="params" value="false">
+                      <elementDefinition Id="aa3acfe3-9241-42cd-a029-b7167005cdf3" />
+                    </propertyInstance>
+                    <elementDefinition Id="3d77872f-8ca5-4fb3-b097-228e9cec93d4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e513399b-745d-4b7f-89eb-b55a69a10dfc" />
+          </operation>
+          <operation Id="2a0ed8f8-6b24-4346-ba8a-3b6674a59f1b" name="Start" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="9b54af65-230f-4562-bdea-7edd340d27ac" handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///D:/Felix/(C) Coding/.NET/C%2523/Eigene Programme/VirtualBoxService/VirtualBoxService/bin/Debug/VirtualBoxService.exe&quot; Namespace=VirtualBoxService Type=DefaultMachineController Member=Start" tag="ViewCode">
+                <elementDefinition Id="f21c6805-eef1-4182-934f-308bbf9f367f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="518bdc3a-c9d2-4373-8716-dab73d0bff79" name="method" profile="CSharpProfile">
+                <elementDefinition Id="2dbd0a13-e4f2-4c34-8444-ca19d993b195" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9e865aa0-c103-4b5d-b1e0-ec0896fb75ad">
+                    <propertyInstance Id="5502884a-0125-4c1a-8a9c-10075c92f3a9" name="ClrAttributes">
+                      <elementDefinition Id="60f2591a-d8aa-4995-8ead-a4e5d2cb1a79" />
+                    </propertyInstance>
+                    <elementDefinition Id="e443def6-aa56-4a51-ba18-64b5105adebb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f2f669f5-827c-4a2d-ba66-f22fb6d33f89">
+                    <propertyInstance Id="1fb1b4bf-a1c5-4125-ae3c-70ff7223a154" name="IsPartial" value="false">
+                      <elementDefinition Id="026add9b-1e34-409c-9038-710968c34bc2" />
+                    </propertyInstance>
+                    <elementDefinition Id="0509e3ef-8bb5-42dc-8da5-d54394322693" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6b8d1580-ffd4-4649-8aef-e013cc220f5f">
+                    <propertyInstance Id="af312377-77dd-455a-9b3b-7e2916b5c765" name="IsUnsafe" value="false">
+                      <elementDefinition Id="826e4c3c-0bc0-4c22-aed1-355fa27a161e" />
+                    </propertyInstance>
+                    <elementDefinition Id="3e6a1ccf-eb5b-41a0-ae1b-621ec32f8ba7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0f128dd4-0809-4766-9a37-66973087de84">
+                    <propertyInstance Id="e14b36cd-2b12-46ae-84f4-0163e16da62b" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="274c0d74-865f-41b3-9462-347b1e00a853" />
+                    </propertyInstance>
+                    <elementDefinition Id="143bf31c-e14c-4912-89ec-c1cfdc4ff507" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1e9fc6c1-4460-413b-9f1a-dd85a3239498">
+                    <propertyInstance Id="e0cf7311-49d9-4132-9eac-34099f33ab8e" name="params" value="false">
+                      <elementDefinition Id="669ec81f-0165-4f6a-b57e-3c2001fb2465" />
+                    </propertyInstance>
+                    <elementDefinition Id="4935a555-ec05-487e-85ee-388bd21d1941" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="724c628a-5fe1-4318-83be-651181ead085" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e62c5c7c-b3f2-44ff-b293-9be64f4333a9" name="VBox" isAbstract="false" isLeaf="false" cachedFullName="Model::VBoxWrapper::VBox">
+        <elementDefinition Id="20e70be3-eb55-4551-af0f-9585d31226b7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1dd85dea-f8ff-42fc-be0a-66092a4b43f1" name="IEnumerable&lt;DefaultMachineController.MachineProgressTokenTuple&gt;" isAbstract="false" isLeaf="false" cachedFullName="Model::System::Collections::Generic::IEnumerable&lt;DefaultMachineController.MachineProgressTokenTuple&gt;">
+        <elementDefinition Id="e5d4ff3c-5ad7-4eb6-98ac-083b00e034b7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9d47f53a-bdec-435a-af8c-7af38ddb2d56" name="MachineOperationToken" isAbstract="false" isLeaf="false" cachedFullName="Model::VirtualBoxService::MachineOperationToken">
+        <elementDefinition Id="646e05c3-5e16-44e0-b637-ec6fbd05c93d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f3f8a765-5a7d-4dc5-a328-1d31127ca416" name="IList&lt;DefaultMachineController.MachineProgressTokenTuple&gt;" isAbstract="false" isLeaf="false" cachedFullName="Model::System::Collections::Generic::IList&lt;DefaultMachineController.MachineProgressTokenTuple&gt;">
+        <elementDefinition Id="ca6c7b5e-667f-4030-8f4c-682790231322" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2b040156-0766-495a-8677-b993a06515f8" name="Machine" isAbstract="false" isLeaf="false" cachedFullName="Model::VBoxWrapper::Machine">
+        <elementDefinition Id="e637c8ab-d953-4845-a6d1-c069ac658665" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="948899df-9f37-4f40-b6f1-24a122cdf199" name="TraceSource" isAbstract="false" isLeaf="false" cachedFullName="Model::System::Diagnostics::TraceSource">
+        <elementDefinition Id="e1bbf06c-661f-423a-85e3-d31c0a02973a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="46f2b94f-266a-4479-b825-eb111bfec773" name="Stopwatch" isAbstract="false" isLeaf="false" cachedFullName="Model::System::Diagnostics::Stopwatch">
+        <elementDefinition Id="37ec9849-2ad0-4f21-84b9-9fa72b2cc1aa" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="c84ec8bb-5126-4644-9baa-d96904771bdc" name="Model">
+    <appliedStereotypesInternal>
+      <stereotypeInstance Id="066725d6-663f-4ed0-89b4-e337a12e34bb" name="namespace" profile="CSharpProfile">
+        <elementDefinition Id="90b1b089-eced-4bdd-a351-babfe4250d8c" />
+        <propertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="7231aaa3-6218-4282-9703-e5e3840de9c7">
+            <propertyInstance Id="8382033b-4069-4c89-a07b-b84519bcd902" name="BaseName">
+              <elementDefinition Id="4e121abf-c4ef-469e-806f-796c27e51345" />
+            </propertyInstance>
+            <elementDefinition Id="85048613-8837-4c5d-a80f-b258dbcfa52c" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="88256301-5cc9-4541-a53c-6a8ba95c403c">
+            <propertyInstance Id="254b13a6-07b8-42dc-833c-469a9b8ab6e8" name="ClrAttributes">
+              <elementDefinition Id="e2a4bb9d-8239-4ef2-aebd-61e1df2d3005" />
+            </propertyInstance>
+            <elementDefinition Id="f5987c56-5dd7-492b-9034-8e14fe7635be" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="3c8e760b-f323-468b-810a-bc8bd568505b">
+            <propertyInstance Id="0f5c4e01-06e3-4123-b995-0e7f2ee78b32" name="Usings">
+              <elementDefinition Id="79176e6a-7225-4685-a0cb-b7d31d3cc8d3" />
+            </propertyInstance>
+            <elementDefinition Id="bd18b0d4-0cbf-4b22-8095-5f48746d127f" />
+          </stereotypeInstanceHasPropertyInstances>
+        </propertyInstances>
+      </stereotypeInstance>
+      <stereotypeInstance Id="7c6821a1-ca62-43cf-866b-ea772b2aaef8" name="TextTemplateBindings" profile="TextTemplateBindings">
+        <elementDefinition Id="f5fe6658-2526-463d-ae54-fb9237cdfd9f" />
+        <propertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="8792ca43-ccbd-4f78-86cd-d3e79199283b">
+            <propertyInstance Id="f7b60c89-2d17-4f35-976b-20d9227b45c5" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+              <elementDefinition Id="c56b4b6c-051f-47ca-ba64-df7aeb05cee0" />
+            </propertyInstance>
+            <elementDefinition Id="3d62ff33-ea28-4eb2-92dd-6489db41a9e6" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="b95c9ce2-b2d3-447e-85d8-303b822f57c4">
+            <propertyInstance Id="f4de3d6b-eefe-490a-8a5f-bd4e2d51b801" name="TemplateFilePath" value="ClassTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\ClassTemplate.t4|EnumTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\EnumTemplate.t4|InterfaceTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\InterfaceTemplate.t4|StructTemplate=%LocalAppData%\Microsoft\VisualStudio\10.0\Extensions\Microsoft\Visualization and Modeling Feature Pack\1.0\Templates\Text\StructTemplate.t4">
+              <elementDefinition Id="a35d7b6c-8e0a-4fac-bcc6-bb815ce1e5db" />
+            </propertyInstance>
+            <elementDefinition Id="009e5693-ac52-40eb-8640-59424227ac6b" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="70b99a7a-f647-4558-8309-1389f517deb6">
+            <propertyInstance Id="6c21e8f2-4862-467c-b479-7b4ea52554ed" name="ProjectPath" value="ClassTemplate=..\ModelLib\ModelLib.csproj|EnumTemplate=..\ModelLib\ModelLib.csproj|InterfaceTemplate=..\ModelLib\ModelLib.csproj|StructTemplate=..\ModelLib\ModelLib.csproj">
+              <elementDefinition Id="32a9c5cd-35b1-4618-92e1-29b5bd02f413" />
+            </propertyInstance>
+            <elementDefinition Id="f38fbc1f-f267-40d9-aa46-cfe3e9be3527" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="839e731c-c536-4f92-82a6-6ba02c318d7e">
+            <propertyInstance Id="6d7132d6-f4f3-45c5-8308-11d9e32d0f43" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+              <elementDefinition Id="272b34fc-6cf4-440c-8a00-925989c1f78f" />
+            </propertyInstance>
+            <elementDefinition Id="91fa8d3c-b410-4049-8d1f-9a6a063b987e" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="5c6f1974-6390-4892-a514-f5f9748cf545">
+            <propertyInstance Id="f63b84aa-d857-408a-bd91-cefa969cb511" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+              <elementDefinition Id="09903601-dff8-4814-b42f-76486b110f6d" />
+            </propertyInstance>
+            <elementDefinition Id="303e398f-8f39-4913-b3f2-bf4de6888220" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="0b231ec6-d66e-419e-8260-b7905c3f7a41">
+            <propertyInstance Id="77432c32-f696-4862-b367-208ba2a26342" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+              <elementDefinition Id="b6d5a00e-61a9-474d-b707-9cad0d664461" />
+            </propertyInstance>
+            <elementDefinition Id="4b019ebb-bd66-4198-9005-a722b4cc78c9" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="f99c4ba8-de7c-421a-ac4e-32f8aa2f2466">
+            <propertyInstance Id="fabfb4e2-a54e-4d57-a351-5456dd6629ba" name="Parameters">
+              <elementDefinition Id="de0f3fe7-623f-4a53-92ce-1e2467afcfeb" />
+            </propertyInstance>
+            <elementDefinition Id="101afbcd-faee-47a1-b095-f0f5bc0f4bc0" />
+          </stereotypeInstanceHasPropertyInstances>
+        </propertyInstances>
+      </stereotypeInstance>
+    </appliedStereotypesInternal>
+    <elementDefinition Id="40f9bc56-204d-45a1-90c9-dc9ee01c3a14" />
+    <profileInstances>
+      <packageHasProfileInstances Id="717b3ece-c6d0-468d-939f-2a81168186fe">
+        <profileInstance Id="b28e02c1-59b5-438d-a476-1d7a1a4deea9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="661caa69-580a-415e-aec6-30a18f5c50e2">
+        <profileInstance Id="2333b457-be5d-44c7-b867-a0e56b9529b9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="69c3705c-b26e-49f1-b391-cf0a5c287239">
+        <profileInstance Id="33544355-78ae-4651-a6d7-1fd9e252aeeb" name="CSharpProfile">
+          <elementDefinition Id="f9439fa9-3b75-4688-b855-e0bf0ff79a08" />
+        </profileInstance>
+        <elementDefinition Id="28cfcb65-dfb9-4e07-a440-79245a3b9e21" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="dfcc024b-1774-41b9-97db-078ecc01ef2e">
+        <profileInstance Id="adda87b2-c826-41ad-9a17-faed52ee61a1" name="TextTemplateBindings">
+          <elementDefinition Id="2f3e35a6-b74b-4fcd-8d09-8263874a8242" />
+        </profileInstance>
+        <elementDefinition Id="ed3f1e10-3dab-4c50-9c35-37e92c27d720" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="259b179f-62c5-4387-8f39-432e44839bd9">
+        <profileInstance Id="7a6c2024-c214-4a5c-8f80-50caed0ff34b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="85a81bd0-b59a-40c5-8377-8dc75015f904">
+        <profileInstance Id="85dcdab9-ac2d-4db3-bbe1-dd8945f9a228" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="70da4305-2b88-4a08-930a-d10facaa5432">
+        <profileInstance Id="866b0055-dce2-4420-9794-97a035bd1e3f" name="CSharpProfile">
+          <elementDefinition Id="f9439fa9-3b75-4688-b855-e0bf0ff79a08" />
+        </profileInstance>
+        <elementDefinition Id="28cfcb65-dfb9-4e07-a440-79245a3b9e21" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e3c8832d-e2d6-4764-a558-bd93a6182a8d">
+        <profileInstance Id="9a8f9877-9489-4017-89b9-a4313c5ea1b8" name="TextTemplateBindings">
+          <elementDefinition Id="2f3e35a6-b74b-4fcd-8d09-8263874a8242" />
+        </profileInstance>
+        <elementDefinition Id="ed3f1e10-3dab-4c50-9c35-37e92c27d720" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+  <package Id="4424cbc3-632f-4b99-b52e-a84f885fa3b9" name="VirtualBoxService" visibility="Private">
+    <elementDefinition Id="fa2ef2f4-23da-46fc-a83e-8f15a449308c" />
+  </package>
+</logicalClassDesignerModel>
