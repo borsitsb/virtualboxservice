@@ -136,6 +136,7 @@ namespace VirtualBoxService
 
         private class ServiceConfig : IDisposable {
 
+            const int MINMIMAL_PRESHUTDOWN_TIMEOUT = 60000;
             const int SERVICE_CONFIG_PRESHUTDOWN_INFO = 7;
 
             private SafeServiceHandle _handle;
@@ -147,6 +148,10 @@ namespace VirtualBoxService
             public void SetPreshutdownTimeout(int milliseconds) {
                 if (milliseconds <= 0) {
                     throw new ArgumentOutOfRangeException("PreshutdownTimeout must be a positive value.");
+                }
+
+                if (milliseconds < MINMIMAL_PRESHUTDOWN_TIMEOUT) {
+                    milliseconds = MINMIMAL_PRESHUTDOWN_TIMEOUT;
                 }
                 
                 NativeMethods.SERVICE_PRESHUTDOWN_INFO info = new NativeMethods.SERVICE_PRESHUTDOWN_INFO();
