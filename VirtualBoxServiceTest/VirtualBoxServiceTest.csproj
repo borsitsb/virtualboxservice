@@ -87,9 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="libs\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Shadow Include="Testverweise\VirtualBoxService.accessor" />
+    <Folder Include="Testverweise\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

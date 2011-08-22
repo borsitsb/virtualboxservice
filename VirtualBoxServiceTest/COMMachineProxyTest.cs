@@ -167,5 +167,20 @@ namespace VirtualBoxServiceTest
                 
             }
         }
+
+        [TestMethod()]
+        public void EstimateTimeNegativeTimeTest() {
+            Mock<IProgress> progressMock = new Mock<IProgress>();
+            _mockedComMachine.Setup(x => x.LaunchVMProcess(It.IsAny<Session>(), It.IsAny<string>(), It.IsAny<string>())).Returns(progressMock.Object);
+            progressMock.Setup(x => x.TimeRemaining).Returns(-100);
+            progressMock.SetupGet(x => x.Percent).Returns(40);
+
+            ComMachineProxy machineProxy = new ComMachineProxy(_mockedComMachine.Object);
+            ProgressToken t = machineProxy.Start();
+
+            TimeSpan test = t.EstimateRemainingTime();
+
+            Assert.IsTrue(test.CompareTo(TimeSpan.Zero) > 0, "Negative TimeSpan returned");
+        }
     }
 }

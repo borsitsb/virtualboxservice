@@ -255,7 +255,9 @@ namespace VirtualBoxService
 
         void announceEstimatedTime(TimeSpan t) {
             try {
-                RaiseAnnounceRemainingTime(new AnnounceRemainingTimeEventArgs(t));
+                if (t.CompareTo(TimeSpan.Zero) > 0) {
+                    RaiseAnnounceRemainingTime(new AnnounceRemainingTimeEventArgs(t));
+                }
             }
             catch (Exception e) {
                 _log.TraceEvent(TraceEventType.Warning, (int)Logging.MachineControllerEventIds.TimeEstimationProblem, "Could not announce remaining time: {0}", e.ToString());
