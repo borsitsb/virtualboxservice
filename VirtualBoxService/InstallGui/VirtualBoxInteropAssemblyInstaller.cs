@@ -31,25 +31,38 @@ namespace VirtualBoxService.InstallGui {
     public class VirtualBoxInteropAssemblyInstaller : Installer {
 
         public override void Install(System.Collections.IDictionary stateSaver) {
-            VirtualBoxComInteropAssemblyBuilder iaBuilder = new VirtualBoxComInteropAssemblyBuilder();
-            iaBuilder.DeleteTypeLib(Utils.GetApplicationPath());
-            iaBuilder.BuildLib(Utils.GetApplicationPath());
+            try {
+                VirtualBoxComInteropAssemblyBuilder iaBuilder = new VirtualBoxComInteropAssemblyBuilder();
+                iaBuilder.DeleteTypeLib(Utils.GetApplicationPath());
+                iaBuilder.BuildLib(Utils.GetApplicationPath());
 
-            this.Context.LogMessage("Created Interop-Assembly");
-
-            base.Install(stateSaver);
+                this.Context.LogMessage("Created Interop-Assembly.");
+            }
+            catch (Exception ex) {
+                this.Context.LogMessage("Creation of Interop-Assembly failed. Is Virtualbox installed?");
+                throw new InstallException("Creation of Interop-Assembly failed. Is Virtualbox installed?", ex);
+            }
+            finally {
+                base.Install(stateSaver);
+            }
         }
 
         public override void Rollback(System.Collections.IDictionary savedState) {
-            deleteLib();
-
-            base.Rollback(savedState);
+            try {
+                deleteLib();
+            }
+            finally {
+                base.Rollback(savedState);
+            }
         }
 
         public override void Uninstall(System.Collections.IDictionary savedState) {
-            deleteLib();
-            
-            base.Uninstall(savedState);
+            try {
+                deleteLib();
+            }
+            finally {
+                base.Uninstall(savedState);
+            }
         }
 
         private void deleteLib() {

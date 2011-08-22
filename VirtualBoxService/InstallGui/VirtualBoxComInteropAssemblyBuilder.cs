@@ -55,10 +55,10 @@ namespace VirtualBoxService.InstallGui {
 
         public void BuildLib(string targetFolder) {
             NativeMethods.LoadTypeLibEx(VBoxWrapper.COMInterface.VBoxComUtils.GetVirtualBoxComTypeLib(), NativeMethods.RegKind.RegKind_None, out _typeLibInMemory);
-            
             if (_typeLibInMemory == null) {
                 throw new DllNotFoundException("Could not load Virtualbox-Typelibrary.");
             }
+
 
             TypeLibConverter converter = new TypeLibConverter();
             ConversionEventHandler handler = new ConversionEventHandler();

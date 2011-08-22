@@ -59,9 +59,16 @@ namespace VirtualBoxService.InstallGui
                 _userPassCombination = c;
 
                 installer.BeforeInstall += new InstallEventHandler(installer_BeforeInstall);
-                
-                installer.Install(savedState);
-                installer.Commit(savedState);
+
+                //Rollback has to be called by user code. According msdn-doc for AssemblyInstaller.Install() is probably wrong.
+                try {
+                    installer.Install(savedState);
+                    installer.Commit(savedState);
+                }
+                catch (Exception ex) {
+                    installer.Rollback(savedState);
+                    throw new InstallException(String.Format("Install failed: {0}", ex.Message), ex);
+                }
 
                 installer.BeforeInstall -= installer_BeforeInstall;
             }
@@ -102,7 +109,12 @@ namespace VirtualBoxService.InstallGui
                 installer.UseNewContext = true;
                 Hashtable table = new Hashtable();
 
-                installer.Uninstall(table);
+                try {
+                    installer.Uninstall(table);
+                }
+                catch (Exception ex) {
+                    throw new InstallException(String.Format("Uninstall failed, maybe not all parts are removed: {0}", ex.Message), ex);
+                }
             }
 		}
 

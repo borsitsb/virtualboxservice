@@ -31,24 +31,38 @@ namespace VirtualBoxService.InstallGui {
     public class ConfigInstaller : Installer {
 
         public override void Install(System.Collections.IDictionary stateSaver) {
-            Config.GetConfig().Initialize();
-            this.Context.LogMessage("Config initialized");
-
-            base.Install(stateSaver);
+            try {
+                Config.GetConfig().Initialize();
+                this.Context.LogMessage("Config initialized");
+            }
+            finally {
+                base.Install(stateSaver);
+            }
         }
 
         public override void Rollback(System.Collections.IDictionary savedState) {
-            Config.GetConfig().Clear();
-            this.Context.LogMessage("Config cleared");
-            
-            base.Rollback(savedState);
+            try {
+                clearConfig();
+            }
+            finally {
+                base.Rollback(savedState);
+            }
         }
 
         public override void Uninstall(System.Collections.IDictionary savedState) {
+            try {
+                clearConfig();
+            }
+            finally {
+               base.Uninstall(savedState);
+            }
+        }
+
+        private void clearConfig() {
             Config.GetConfig().Clear();
             this.Context.LogMessage("Config cleared");
-            
-            base.Uninstall(savedState);
         }
+
+        
     }
 }

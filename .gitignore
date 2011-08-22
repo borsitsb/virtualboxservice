@@ -3,3 +3,5 @@
 /*/obj
 /VirtualBoxService/StyleCop.Cache
 /TestResults/*
+/VirtualBoxService.suo
+/VirtualBoxService/VirtualBoxService.csproj.user
